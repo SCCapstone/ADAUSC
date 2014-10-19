@@ -1,0 +1,127 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ablesc"
+        android:scaleType="fitXY"
+        android:cropToPadding="false"
+        android:contentDescription="able SC logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:id="@+id/buttonBrowse"
+        android:minWidth="135dp"
+        android:maxWidth="135dp"
+        android:minHeight="135dp"
+        android:maxHeight="135dp"
+        android:onClick="show"
+        android:background="#E4E4E4"
+        android:textColor="#393939"
+        android:layout_toStartOf="@+id/buttonCalculator"
+        android:layout_below="@+id/imageView"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:id="@+id/buttonCalculator"
+        android:minWidth="135dp"
+        android:maxWidth="135dp"
+        android:minHeight="135dp"
+        android:maxHeight="135dp"
+        android:onClick="show"
+        android:background="#393939"
+        android:textColor="#E4E4E4"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/centerPoint"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorites"
+        android:id="@+id/buttonFavorites"
+        android:minWidth="135dp"
+        android:maxWidth="135dp"
+        android:minHeight="135dp"
+        android:maxHeight="135dp"
+        android:layout_below="@+id/buttonBrowse"
+        android:layout_alignLeft="@+id/buttonBrowse"
+        android:layout_alignStart="@+id/buttonBrowse"
+        android:onClick="show"
+        android:background="#393939"
+        android:textColor="#E4E4E4"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2010 \nDocument"
+        android:id="@+id/buttonDocument"
+        android:layout_toRightOf="@+id/buttonFavorites"
+        android:minWidth="135dp"
+        android:maxWidth="135dp"
+        android:minHeight="135dp"
+        android:maxHeight="135dp"
+        android:layout_alignTop="@+id/buttonFavorites"
+        android:layout_alignLeft="@+id/buttonCalculator"
+        android:layout_alignStart="@+id/buttonCalculator"
+        android:onClick="show"
+        android:background="#E4E4E4"
+        android:textColor="#393939"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerPoint"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_link"
+        android:id="@+id/about"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/centerPoint"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_link"
+        android:id="@+id/contact"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonBrowse"
+        android:layout_toEndOf="@+id/buttonBrowse"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:id="@+id/separator"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/about"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
