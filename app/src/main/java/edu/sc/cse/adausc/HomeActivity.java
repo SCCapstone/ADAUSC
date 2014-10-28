@@ -23,6 +23,8 @@ public class HomeActivity extends Activity {
     private TextView aboutLink;
     private TextView contactLink;
 
+    //region methods
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,8 +100,10 @@ public class HomeActivity extends Activity {
         SessionCache.Initialize(); //store whatever we may need on the fly in session cache (may be unneeded?)
         SerializationHelper.DeserializeFavorites(this); //maybe a bad idea passing this?
     }
+    
+    //endregion methods
 
-
+    //unused overrides
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

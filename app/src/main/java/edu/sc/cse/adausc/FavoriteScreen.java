@@ -1,6 +1,7 @@
 package edu.sc.cse.adausc;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 /**
  * Created by dohertsm on 10/28/2014.
@@ -8,4 +9,9 @@ import android.app.Activity;
 
 //view model for Favorites
 public class FavoriteScreen extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_favorites);
+    }
 }
