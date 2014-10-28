@@ -1,0 +1,3 @@
+405.6 dummy fav
+100.0 dummy fav
+999.9 dummy fav

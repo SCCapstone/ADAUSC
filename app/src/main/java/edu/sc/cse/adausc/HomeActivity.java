@@ -65,7 +65,20 @@ public class HomeActivity extends Activity {
             @Override
             public void onClick(View view) {
                 //when this button is clicked, show the alert
-                alert.show();
+
+                //debug
+                String oFavs = "";
+                for(int i = 0; i < SessionCache.getFavorites().size(); i++){
+                    oFavs += SessionCache.getFavorites().get(i);
+                    oFavs += "\n";
+                }
+                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+
+                builder.setMessage(oFavs)
+                        .setTitle("YO FAVZ LIST");
+
+                AlertDialog dialog = builder.create();
+                dialog.show();
             }
         });
 
@@ -81,6 +94,13 @@ public class HomeActivity extends Activity {
         aboutLink.setMovementMethod(LinkMovementMethod.getInstance());
         contactLink = (TextView) findViewById(R.id.contact);
         contactLink.setMovementMethod(LinkMovementMethod.getInstance());
+
+        //after button initialization:
+        //-init session cache
+        //-deserialize favorites
+
+        SessionCache.Initialize();
+        SerializationHelper.DeserializeFavorites(this); //maybe a bad idea passing this?
 
     }
 
