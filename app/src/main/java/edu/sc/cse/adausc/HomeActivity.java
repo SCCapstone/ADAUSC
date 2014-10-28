@@ -95,13 +95,16 @@ public class HomeActivity extends Activity {
         contactLink = (TextView) findViewById(R.id.contact);
         contactLink.setMovementMethod(LinkMovementMethod.getInstance());
 
-        //after button initialization:
-        //-init session cache
-        //-deserialize favorites
+        //after button initialization fire our start up method
+        OnStartUp();
 
+    }
+
+    public void OnStartUp(){
+        //store whatever we may need on the fly in session cache. (probably wont be much
+        //and may show to be unneeded eventually)
         SessionCache.Initialize();
         SerializationHelper.DeserializeFavorites(this); //maybe a bad idea passing this?
-
     }
 
 

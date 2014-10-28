@@ -1,3 +1,6 @@
-405.6 dummy fav
+405.6 Rise
 100.0 dummy fav
-999.9 dummy fav
+200.0 dummy fav
+300.0 dummy fav
+400.0 dummy fav
+500.0 dummy fav
