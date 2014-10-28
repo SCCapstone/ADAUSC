@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="edu.sc.cse.adausc.SectionScreen" />
+        <activity android:name="edu.sc.cse.adausc.FavoriteScreen" />
+        <activity android:name="edu.sc.cse.adausc.BrowseScreen" />
+        <activity android:name="edu.sc.cse.adausc.CalculatorScreen" />
     </application>
 
 </manifest>

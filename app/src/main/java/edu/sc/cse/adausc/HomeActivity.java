@@ -1,6 +1,7 @@
 package edu.sc.cse.adausc;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
@@ -28,18 +29,11 @@ public class HomeActivity extends Activity {
         setContentView(R.layout.activity_home);
         getActionBar().hide();
 
-        alert = new AlertDialog.Builder(HomeActivity.this);
-        alert.setTitle("About");
-        alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Toast.makeText(HomeActivity.this, "Success", Toast.LENGTH_SHORT).show();
-            }
-        });
-        alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Toast.makeText(HomeActivity.this, "Fail", Toast.LENGTH_SHORT) .show();
-            }
-        });
+        //go go super app!
+        OnStartUp();
+    }
+
+    public void InputInitialization(){
         btBrowse = (Button) findViewById(R.id.buttonBrowse);
         btCalculator = (Button) findViewById(R.id.buttonCalculator);
         btFavorites = (Button) findViewById(R.id.buttonFavorites);
@@ -49,36 +43,38 @@ public class HomeActivity extends Activity {
             @Override
             public void onClick(View view) {
                 //when this button is clicked, show the alert
-                alert.show();
+                //alert.show();
+                Intent oTransition = new Intent(HomeActivity.this, BrowseScreen.class);
+                startActivity((oTransition));
             }
         });
 
         btCalculator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //when this button is clicked, show the alert
-                alert.show();
+                Intent oTransition = new Intent(HomeActivity.this, CalculatorScreen.class);
+                startActivity((oTransition));
             }
         });
 
         btFavorites.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //when this button is clicked, show the alert
-
+                Intent oTransition = new Intent(HomeActivity.this, FavoriteScreen.class);
+                startActivity((oTransition));
                 //debug
-                String oFavs = "";
-                for(int i = 0; i < SessionCache.getFavorites().size(); i++){
-                    oFavs += SessionCache.getFavorites().get(i);
-                    oFavs += "\n";
-                }
-                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+                //String oFavs = "";
+                //for(int i = 0; i < SessionCache.getFavorites().size(); i++){
+                //    oFavs += SessionCache.getFavorites().get(i);
+                //    oFavs += "\n";
+                //}
+                //AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
 
-                builder.setMessage(oFavs)
-                        .setTitle("YO FAVZ LIST");
+                //builder.setMessage(oFavs)
+                //        .setTitle("YO FAVZ LIST");
 
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                //AlertDialog dialog = builder.create();
+                //dialog.show();
             }
         });
 
@@ -86,7 +82,8 @@ public class HomeActivity extends Activity {
             @Override
             public void onClick(View view) {
                 //when this button is clicked, show the alert
-                alert.show();
+                //alert.show();
+                //is this linking to chrome or are we displaying a local version?
             }
         });
 
@@ -94,16 +91,11 @@ public class HomeActivity extends Activity {
         aboutLink.setMovementMethod(LinkMovementMethod.getInstance());
         contactLink = (TextView) findViewById(R.id.contact);
         contactLink.setMovementMethod(LinkMovementMethod.getInstance());
-
-        //after button initialization fire our start up method
-        OnStartUp();
-
     }
 
     public void OnStartUp(){
-        //store whatever we may need on the fly in session cache. (probably wont be much
-        //and may show to be unneeded eventually)
-        SessionCache.Initialize();
+        InputInitialization(); //set up event listeners
+        SessionCache.Initialize(); //store whatever we may need on the fly in session cache (may be unneeded?)
         SerializationHelper.DeserializeFavorites(this); //maybe a bad idea passing this?
     }
 
