@@ -91,6 +91,12 @@ public class HomeActivity extends Activity {
 
         aboutLink = (TextView) findViewById(R.id.about);
         aboutLink.setMovementMethod(LinkMovementMethod.getInstance());
+        aboutLink.setOnClickListener((view) -> {
+
+            Intent oTransition = new Intent(HomeActivity.this, AboutScreen.class);
+            startActivity(oTransition);
+
+        });
         contactLink = (TextView) findViewById(R.id.contact);
         contactLink.setMovementMethod(LinkMovementMethod.getInstance());
     }

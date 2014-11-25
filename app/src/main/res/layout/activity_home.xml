@@ -93,35 +93,23 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_link"
-        android:id="@+id/about"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/centerPoint"
-        android:textSize="20dp"
-        android:layout_marginBottom="15dp"
-        android:layout_marginRight="10dp" />
+        android:text="About"
+        android:id="@+id/button"
+        android:layout_below="@+id/buttonFavorites"
+        android:layout_alignRight="@+id/buttonFavorites"
+        android:layout_alignEnd="@+id/buttonFavorites" />
 
-    <TextView
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/contact_link"
-        android:id="@+id/contact"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/buttonBrowse"
-        android:layout_toEndOf="@+id/buttonBrowse"
-        android:layout_marginBottom="15dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="20dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="|"
-        android:id="@+id/separator"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/about"
-        android:layout_centerHorizontal="true" />
+        android:text="Contact"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/buttonDocument"
+        android:layout_alignStart="@+id/buttonDocument" />
 </RelativeLayout>
