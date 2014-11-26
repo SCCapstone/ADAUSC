@@ -1,14 +1,18 @@
 package edu.sc.cse.adausc;
 
+import android.content.Context;
+
 import java.util.ArrayList;
 
 /**
  * Created by dohertsm on 10/28/2014.
  */
 public class SessionCache {
+    //singleton
+
     //region Methods
-    public static void Initialize(){
-        m_oFavorites = new ArrayList<String>();
+    public static void Initialize(Context oContext){
+        m_oFavorites = SerializationHelper.DeserializeFavorites(oContext);
         m_oSessionSearches = new ArrayList<String>();
     }
 

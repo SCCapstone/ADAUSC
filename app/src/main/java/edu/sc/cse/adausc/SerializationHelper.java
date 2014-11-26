@@ -13,10 +13,10 @@ import java.util.ArrayList;
  */
 public class SerializationHelper {
 
-    public static void DeserializeFavorites(Context oContext){
-        //deserialize and store favorites in sessioncache
+    //singleton pattern
 
-        //*******XStream library looks like a good idea******
+    public static ArrayList<String> DeserializeFavorites(Context oContext){
+        //deserialize and store favorites in sessioncache
 
         //all this is for testing, we will move to xml soon.
 
@@ -38,10 +38,11 @@ public class SerializationHelper {
             e.printStackTrace();
         }
 
-        SessionCache.PopulateFavorites(oFavList);
+        //SessionCache.PopulateFavorites(oFavList);
+        return oFavList;
     }
 
     //region fields
-    private static final String FAVORITES_FILE_NAME = "favorites.txt";
+    private static final String FAVORITES_FILE_NAME = "favs.ada";
 
 }
