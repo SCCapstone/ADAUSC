@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
 /**
@@ -41,6 +42,33 @@ public class SerializationHelper {
         //SessionCache.PopulateFavorites(oFavList);
         return oFavList;
     }
+
+    public static StandardSection Deserialize(String sSection){
+        StandardSection oSection = new StandardSection();
+        try {
+            InputStream oFileIn = SessionCache.m_oAppContext.getAssets().open("s" + sSection + ".ada");
+            ObjectInputStream oObjectReader = new ObjectInputStream(oFileIn);
+            oSection = (edu.sc.cse.adausc.StandardSection)oObjectReader.readObject();
+        } catch (Exception oEx){
+            //do nothing
+            oEx.printStackTrace();
+        }
+        return  oSection;
+    }
+
+
+
+    public static boolean SerializeSection(String sSection){
+        //serialize sSection to favs.ada
+        return true;
+    }
+
+    public static boolean RemoveSection(String sSection){
+        //remove sSection from favs.ada
+        return true;
+    }
+
+
 
     //region fields
     private static final String FAVORITES_FILE_NAME = "favs.ada";

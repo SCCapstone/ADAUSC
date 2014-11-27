@@ -14,6 +14,7 @@ public class SessionCache {
     public static void Initialize(Context oContext){
         m_oFavorites = SerializationHelper.DeserializeFavorites(oContext);
         m_oSessionSearches = new ArrayList<String>();
+        m_oAppContext = oContext;
     }
 
     public static void PopulateFavorites(ArrayList<String> oFavorites){
@@ -34,6 +35,9 @@ public class SessionCache {
 
 
     //region fields
+    public static Context m_oAppContext;
     private static ArrayList<String> m_oFavorites;       //cache favorites
     private static ArrayList<String> m_oSessionSearches; //cache anything the user searches (just an idea)
+    public static String m_oCurrentStandard;
+    public static String m_oPreviousStandard;
 }
