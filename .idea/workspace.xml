@@ -22,7 +22,6 @@
         </devices>
       </config>
     </shared>
-<<<<<<< HEAD
     <layouts>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_about.xml">
         <config>
