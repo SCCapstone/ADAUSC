@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="false">
+    android:clickable="true">
 
     <Button
         android:layout_width="wrap_content"
@@ -17,13 +17,13 @@
         android:typeface="normal"
         android:textColor="#393939"
         android:background="#E4E4E4"
-        android:enabled="false"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
         android:minWidth="330dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="show" />
 
     <Button
         android:layout_width="wrap_content"

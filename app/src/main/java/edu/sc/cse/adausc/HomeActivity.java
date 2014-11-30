@@ -6,16 +6,12 @@ import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.AlertDialog;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.content.DialogInterface;
 
 public class HomeActivity extends Activity {
 
-    private AlertDialog.Builder alert;
     private Button btBrowse;
     private Button btCalculator;
     private Button btFavorites;
@@ -44,8 +40,6 @@ public class HomeActivity extends Activity {
         btBrowse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //when this button is clicked, show the alert
-                //alert.show();
                 Intent oTransition = new Intent(HomeActivity.this, BrowseScreen.class);
                 startActivity((oTransition));
             }
@@ -64,19 +58,6 @@ public class HomeActivity extends Activity {
             public void onClick(View view) {
                 Intent oTransition = new Intent(HomeActivity.this, FavoriteScreen.class);
                 startActivity((oTransition));
-                //debug
-                //String oFavs = "";
-                //for(int i = 0; i < SessionCache.getFavorites().size(); i++){
-                //    oFavs += SessionCache.getFavorites().get(i);
-                //    oFavs += "\n";
-                //}
-                //AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-
-                //builder.setMessage(oFavs)
-                //        .setTitle("YO FAVZ LIST");
-
-                //AlertDialog dialog = builder.create();
-                //dialog.show();
             }
         });
 
@@ -103,8 +84,7 @@ public class HomeActivity extends Activity {
 
     public void OnStartUp(){
         InputInitialization(); //set up event listeners
-        SessionCache.Initialize(); //store whatever we may need on the fly in session cache (may be unneeded?)
-        SerializationHelper.DeserializeFavorites(this); //maybe a bad idea passing this?
+        SessionCache.Initialize(this);
     }
     
     //endregion methods
