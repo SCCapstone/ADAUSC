@@ -36,6 +36,7 @@ public class HomeActivity extends Activity {
         btCalculator = (Button) findViewById(R.id.buttonCalculator);
         btFavorites = (Button) findViewById(R.id.buttonFavorites);
         btDocument = (Button) findViewById(R.id.buttonDocument);
+        btActivity = (Button) findViewById(R.id.buttonAbout);
 
         btBrowse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,8 +66,8 @@ public class HomeActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                Intent oTransition = new Intent (HomeActivity.this, AboutScreen.class);
-                startActivity(oTransition);
+                Intent oTransition = new Intent(HomeActivity.this, AboutScreen.class);
+                startActivity((oTransition));
 
             }
         });
