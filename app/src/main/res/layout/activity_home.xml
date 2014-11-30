@@ -98,18 +98,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="About"
-        android:id="@+id/button"
+        android:id="@+id/buttonAbout"
         android:layout_below="@+id/buttonFavorites"
         android:layout_alignRight="@+id/buttonFavorites"
-        android:layout_alignEnd="@+id/buttonFavorites" />
+        android:layout_alignEnd="@+id/buttonFavorites"
+        android:height="30dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contact"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
+        android:id="@+id/buttonContact"
+        android:background="#393939"
+        android:textColor="#E4E4E4"
+        android:width="60dp"
+        android:layout_alignTop="@+id/buttonAbout"
         android:layout_alignLeft="@+id/buttonDocument"
-        android:layout_alignStart="@+id/buttonDocument" />
+        android:layout_alignStart="@+id/buttonDocument"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="19dp" />
+
 </RelativeLayout>

@@ -16,8 +16,8 @@ public class HomeActivity extends Activity {
     private Button btCalculator;
     private Button btFavorites;
     private Button btDocument;
-    private TextView aboutLink;
-    private TextView contactLink;
+    private Button btActivity;
+    private Button btContact;
 
     //region methods
 
@@ -61,6 +61,16 @@ public class HomeActivity extends Activity {
             }
         });
 
+        btActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent oTransition = new Intent (HomeActivity.this, AboutScreen.class);
+                startActivity(oTransition);
+
+            }
+        });
+
         btDocument.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,17 +79,7 @@ public class HomeActivity extends Activity {
                 //is this linking to chrome or are we displaying a local version?
             }
         });
-
-        aboutLink = (TextView) findViewById(R.id.about);
-        aboutLink.setMovementMethod(LinkMovementMethod.getInstance());
-        aboutLink.setOnClickListener((view) -> {
-
-            Intent oTransition = new Intent(HomeActivity.this, AboutScreen.class);
-            startActivity(oTransition);
-
-        });
-        contactLink = (TextView) findViewById(R.id.contact);
-        contactLink.setMovementMethod(LinkMovementMethod.getInstance());
+        
     }
 
     public void OnStartUp(){
