@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:clickable="false"
-    android:paddingLeft="10dp">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Please enter the number of parking spaces and then click on the &quot;Calculate&quot; button to determine how many handicap spots will be required."
+        android:text="Please enter the number of parking spaces and then click on the Calculate button to determine how many handicap accessible spaces will be required."
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -44,7 +42,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Test"
         android:id="@+id/OutputText"
+        android:visibility="invisible"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible" />
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 </RelativeLayout>
