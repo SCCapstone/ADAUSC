@@ -56,6 +56,29 @@ public class SerializationHelper {
         return  oSection;
     }
 
+    public static ArrayList<ArrayList<String>> DeserializeMetadata(Context oContext) {
+        ArrayList<ArrayList<String>> oParentChildList = new ArrayList<ArrayList<String>>();
+        for(int i = 0; i < 9; i++){
+            oParentChildList.add(new ArrayList<String>());
+        }
+        try {
+            InputStream oMetafile = oContext.getAssets().open(METADATA_FILE_NAME);
+            InputStreamReader oReader = new InputStreamReader(oMetafile);
+            BufferedReader bufferedReader = new BufferedReader(oReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                int oSection = Integer.parseInt(line.substring(0, 1));//(int)line.charAt(0);
+                oParentChildList.get(oSection - 1).add(line);
+            }
+            oReader.close();
+            bufferedReader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return oParentChildList;
+    }
+
 
 
     public static boolean SerializeSection(String sSection){
@@ -72,5 +95,5 @@ public class SerializationHelper {
 
     //region fields
     private static final String FAVORITES_FILE_NAME = "favs.ada";
-
+    private static final String METADATA_FILE_NAME = "Metadata.ada";
 }
