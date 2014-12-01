@@ -16,7 +16,7 @@ public class HomeActivity extends Activity {
     private Button btCalculator;
     private Button btFavorites;
     private Button btDocument;
-    private Button btActivity;
+    private Button btAbout;
     private Button btContact;
 
     //region methods
@@ -36,7 +36,7 @@ public class HomeActivity extends Activity {
         btCalculator = (Button) findViewById(R.id.buttonCalculator);
         btFavorites = (Button) findViewById(R.id.buttonFavorites);
         btDocument = (Button) findViewById(R.id.buttonDocument);
-        btActivity = (Button) findViewById(R.id.buttonAbout);
+        btAbout = (Button) findViewById(R.id.buttonAbout);
         btContact = (Button) findViewById(R.id.buttonContact);
 
         btBrowse.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +63,7 @@ public class HomeActivity extends Activity {
             }
         });
 
-        btActivity.setOnClickListener(new View.OnClickListener() {
+        btAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
