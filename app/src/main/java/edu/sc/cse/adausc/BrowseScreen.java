@@ -1,23 +1,20 @@
 package edu.sc.cse.adausc;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListView;
-import android.widget.ExpandableListView.OnChildClickListener;
-import android.widget.ExpandableListView.OnGroupClickListener;
-import android.widget.ExpandableListView.OnGroupCollapseListener;
-import android.widget.ExpandableListView.OnGroupExpandListener;
-import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 
 /**
  * Created by dohertsm on 10/28/2014.
  */
-public class BrowseScreen extends Activity {
+public class BrowseScreen extends Activity implements ExpandableListView.OnChildClickListener{
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
@@ -38,6 +35,7 @@ public class BrowseScreen extends Activity {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+        expListView.setOnChildClickListener(this);
     }
 
     /*
@@ -48,28 +46,71 @@ public class BrowseScreen extends Activity {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Section 1");
-        listDataHeader.add("Section 2");
-        listDataHeader.add("Section 3");
+        listDataHeader.add("Chapter 1");
+        listDataHeader.add("Chapter 2");
+        listDataHeader.add("Chapter 3");
+        listDataHeader.add("Chapter 4");
+        listDataHeader.add("Chapter 5");
+        listDataHeader.add("Chapter 6");
+        listDataHeader.add("Chapter 7");
+        listDataHeader.add("Chapter 8");
+        listDataHeader.add("Chapter 9");
 
         // Adding child data
         List<String> section1 = new ArrayList<String>();
-        section1.add("Section 1.a");
-        section1.add("Section 1.b");
-        section1.add("Section 1.c");
-
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(0).size(); i++){
+            section1.add(SessionCache.m_oParentChildList.get(0).get(i));
+        }
         List<String> section2 = new ArrayList<String>();
-        section2.add("Section 2.a");
-        section2.add("Section 2.b");
-        section2.add("Section 2.c");
-        section2.add("Section 2.d");
-
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(1).size(); i++){
+            section2.add(SessionCache.m_oParentChildList.get(1).get(i));
+        }
         List<String> section3 = new ArrayList<String>();
-        section3.add("Section 3.a");
-        section3.add("Section 3.b");
-
-        listDataChild.put(listDataHeader.get(0), section1); // Header, Child data
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(2).size(); i++){
+            section3.add(SessionCache.m_oParentChildList.get(2).get(i));
+        }
+        List<String> section4 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(3).size(); i++){
+            section4.add(SessionCache.m_oParentChildList.get(3).get(i));
+        }
+        List<String> section5 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(4).size(); i++){
+            section5.add(SessionCache.m_oParentChildList.get(4).get(i));
+        }
+        List<String> section6 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(5).size(); i++){
+            section6.add(SessionCache.m_oParentChildList.get(5).get(i));
+        }
+        List<String> section7 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(6).size(); i++){
+            section7.add(SessionCache.m_oParentChildList.get(6).get(i));
+        }
+        List<String> section8 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(7).size(); i++){
+            section8.add(SessionCache.m_oParentChildList.get(7).get(i));
+        }
+        List<String> section9 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(8).size(); i++){
+            section9.add(SessionCache.m_oParentChildList.get(8).get(i));
+        }
+        listDataChild.put(listDataHeader.get(0), section1);
         listDataChild.put(listDataHeader.get(1), section2);
         listDataChild.put(listDataHeader.get(2), section3);
+        listDataChild.put(listDataHeader.get(3), section4);
+        listDataChild.put(listDataHeader.get(4), section5);
+        listDataChild.put(listDataHeader.get(5), section6);
+        listDataChild.put(listDataHeader.get(6), section7);
+        listDataChild.put(listDataHeader.get(7), section8);
+        listDataChild.put(listDataHeader.get(8), section9);
+
+    }
+
+    @Override
+    public boolean onChildClick(ExpandableListView expandableListView, View view, int i, int i2, long l) {
+        SessionCache.m_oPreviousStandard = SessionCache.m_oCurrentStandard;
+        SessionCache.m_oCurrentStandard = SessionCache.m_oParentChildList.get(i).get(i2);
+        Intent oTransition = new Intent(BrowseScreen.this, SectionScreen.class);
+        startActivity((oTransition));
+        return false;
     }
 }
