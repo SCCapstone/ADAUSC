@@ -21,6 +21,7 @@
         <activity android:label="@string/browse_label" android:name="edu.sc.cse.adausc.BrowseScreen" />
         <activity android:label="@string/calculator_label" android:name="edu.sc.cse.adausc.CalculatorScreen" />
         <activity android:label="ADA USC | About" android:name="edu.sc.cse.adausc.AboutScreen" />
+        <activity android:label="ADA USC| Contact" android:name="edu.sc.cse.adausc.ContactScreen" />
         <activity android:label="ADA USC | Parking Calculator" android:name="edu.sc.cse.adausc.CalcParking" />
     </application>
 
