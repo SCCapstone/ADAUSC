@@ -4,43 +4,52 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/App_Summary"
-        android:text="ADA Mobile, meant for use on Android platforms and created under the MIT License, is designed for storing and displaying architectural standards set in place by the Americans with Disabilities Act (ADA) most recently updated in 2010. These standards include specifications for handicap-accessible construction of dorms, social service centers, medical care facilities, etc. These specifications include door widths and ramp angles and lengths, among many more specific measurements and requirements. ADA Mobile makes it easy and efficient to access these standards when in the field or when a stationary and/or written source is not available."
-        android:fadeScrollbars="false"
-        android:typeface="sans"
-        android:autoText="false"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="#FFFFFF" />
+        android:id="@+id/app_info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="@string/app_info" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text='        Copyright (c) 2014 David Brookins, Mateusz Czarnocki, Sean Doherty, John Mauney
-
-        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'
-        android:id="@+id/License_Info"
+        android:id="@+id/copyright_info"
         android:textStyle="italic"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
         android:background="#FFFFFF"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:text="        - Copyright (c) 2014 David Brookins, Mateusz Czarnocki, Sean Doherty, John Mauney"
+        android:textSize="13sp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_gravity="center_horizontal"
-        android:fillViewport="true" >
+        android:id="@+id/license_scroll"
+        android:layout_weight="center"
+        android:layout_gravity="left|right"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='        - Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'
+            android:id="@+id/license_info"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:nestedScrollingEnabled="true"
+            android:textSize="13sp" />
     </ScrollView>
 
 </LinearLayout>
