@@ -66,20 +66,16 @@ public class HomeActivity extends Activity {
         btAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent oTransition = new Intent (HomeActivity.this, AboutScreen.class);
                 startActivity(oTransition);
-
             }
         });
 
         btContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent oTransition = new Intent(HomeActivity.this, ContactScreen.class);
                 startActivity(oTransition);
-
             }
         });
 

@@ -6,8 +6,8 @@
     <string name="browse_label">ADA USC | Browse</string>
     <string name="calculator_label">ADA USC | Calculator</string>
     <string name="favorites_label">ADA USC | Favorites</string>
+    <string name="about_label">About</string>
+    <string name="contact_label">Contact</string>
     <string name="action_settings">Settings</string>
-    <string name="about_link"><a href = "http://google.com">About</a></string>
-    <string name="contact_link"><a href = "http://google.com">Contact</a></string>
 
 </resources>

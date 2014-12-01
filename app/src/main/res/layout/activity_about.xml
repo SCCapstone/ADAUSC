@@ -11,7 +11,12 @@
         android:text="ADA Mobile, meant for use on Android platforms and created under the MIT License, is designed for storing and displaying architectural standards set in place by the Americans with Disabilities Act (ADA) most recently updated in 2010. These standards include specifications for handicap-accessible construction of dorms, social service centers, medical care facilities, etc. These specifications include door widths and ramp angles and lengths, among many more specific measurements and requirements. ADA Mobile makes it easy and efficient to access these standards when in the field or when a stationary and/or written source is not available."
         android:fadeScrollbars="false"
         android:typeface="sans"
-        android:autoText="false" />
+        android:autoText="false"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#FFFFFF" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,7 +28,11 @@
         android:id="@+id/License_Info"
         android:textStyle="italic"
         android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp" />
+        android:layout_marginRight="7dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="#000000" />
 
     <ScrollView
         android:layout_width="match_parent"

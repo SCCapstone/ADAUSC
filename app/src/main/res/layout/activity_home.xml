@@ -32,7 +32,8 @@
         android:layout_toLeftOf="@+id/centerPoint"
         android:layout_marginRight="8dp"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
         android:layout_toRightOf="@+id/centerPoint"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="8dp"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -67,7 +69,8 @@
         android:onClick="show"
         android:background="#393939"
         android:textColor="#E4E4E4"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -84,7 +87,8 @@
         android:layout_alignStart="@+id/buttonCalculator"
         android:onClick="show"
         android:background="#E4E4E4"
-        android:textColor="#393939"/>
+        android:textColor="#393939"
+        android:clickable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -97,26 +101,32 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About"
+        android:text="@string/about_label"
         android:id="@+id/buttonAbout"
         android:layout_below="@+id/buttonFavorites"
-        android:layout_alignRight="@+id/buttonFavorites"
-        android:layout_alignEnd="@+id/buttonFavorites"
-        android:height="30dp" />
+        android:minWidth="135dp"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:maxWidth="135dp"
+        android:layout_alignStart="@+id/buttonFavorites"
+        android:layout_alignParentLeft="false"
+        android:layout_alignLeft="@+id/buttonFavorites" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contact"
+        android:text="@string/contact_label"
         android:id="@+id/buttonContact"
-        android:background="#393939"
-        android:textColor="#E4E4E4"
-        android:width="60dp"
+        android:minWidth="135dp"
         android:layout_alignTop="@+id/buttonAbout"
         android:layout_alignLeft="@+id/buttonDocument"
         android:layout_alignStart="@+id/buttonDocument"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="19dp" />
+        android:clickable="true"
+        android:layout_toRightOf="@+id/buttonDocument"
+        android:layout_below="@+id/buttonAbout"
+        android:layout_alignRight="@+id/buttonDocument"
+        android:layout_toLeftOf="@+id/buttonDocument"
+        android:maxWidth="135dp" />
 
 </RelativeLayout>
