@@ -7,7 +7,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Please enter the number of parking spaces and then click on the Calculate button to determine how many handicap accessible spaces will be required."
+        android:text="Enter total number of parking spaces."
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -22,7 +22,7 @@
         android:id="@+id/numberInput"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
         android:layout_below="@+id/numberInput"
         android:layout_alignLeft="@+id/numberInput"
         android:layout_alignStart="@+id/numberInput"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:paddingLeft="70dp"
         android:paddingRight="70dp" />
 
@@ -43,11 +43,8 @@
         android:text="Test"
         android:id="@+id/OutputText"
         android:visibility="invisible"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="62dp"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentRight="false"
+        android:layout_below="@+id/button_calculate"
+        android:layout_marginTop="20dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp" />
 </RelativeLayout>

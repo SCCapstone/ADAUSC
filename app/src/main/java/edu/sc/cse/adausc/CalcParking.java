@@ -53,7 +53,7 @@ public class CalcParking extends Activity{
 
     public void editText() { //text when the int is valid
         TextView t = (TextView) findViewById(R.id.OutputText);
-        t.setText("If you have " + i + " total parking spaces then you need " + j + " handicap accessible parking spaces.");
+        t.setText("Total spaces: " + i + "\nHandicap spaces required: " + j);
         t.setVisibility(View.VISIBLE);
         //add color Blue
     }

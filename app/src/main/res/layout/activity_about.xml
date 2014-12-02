@@ -34,7 +34,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/license_scroll"
-        android:layout_weight="center"
         android:layout_gravity="left|right"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
@@ -48,7 +47,6 @@
             android:id="@+id/license_info"
             android:textStyle="italic"
             android:textColor="#000000"
-            android:nestedScrollingEnabled="true"
             android:textSize="13sp" />
     </ScrollView>
 

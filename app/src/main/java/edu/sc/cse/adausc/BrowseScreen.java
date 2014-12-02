@@ -46,15 +46,15 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("Chapter 1");
-        listDataHeader.add("Chapter 2");
-        listDataHeader.add("Chapter 3");
-        listDataHeader.add("Chapter 4");
-        listDataHeader.add("Chapter 5");
-        listDataHeader.add("Chapter 6");
-        listDataHeader.add("Chapter 7");
-        listDataHeader.add("Chapter 8");
-        listDataHeader.add("Chapter 9");
+        listDataHeader.add("Ch. 1) Application and Administration");
+        listDataHeader.add("Ch. 2) Scoping Requirements");
+        listDataHeader.add("Ch. 3) Building Blocks");
+        listDataHeader.add("Ch. 4) Accessible Routes");
+        listDataHeader.add("Ch. 5) Gen. Site and Building Elements");
+        listDataHeader.add("Ch. 6) Plumbing Elements and Facilities");
+        listDataHeader.add("Ch. 7) Communication Elements and Features");
+        listDataHeader.add("Ch. 8) Special Rooms, Spaces and Elements");
+        listDataHeader.add("Ch. 9) Built-In Elements");
 
         // Adding child data
         List<String> section1 = new ArrayList<String>();
