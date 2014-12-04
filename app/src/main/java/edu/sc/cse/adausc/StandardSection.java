@@ -36,7 +36,4 @@ public class StandardSection implements Serializable{
     private String m_sContent;
     private static final long serialVersionUID = 1L;
 
-
-
-
 }
