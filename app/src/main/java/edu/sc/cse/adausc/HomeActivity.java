@@ -3,12 +3,10 @@ package edu.sc.cse.adausc;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class HomeActivity extends Activity {
 
@@ -82,9 +80,8 @@ public class HomeActivity extends Activity {
         btDocument.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //when this button is clicked, show the alert
-                //alert.show();
-                //is this linking to chrome or are we displaying a local version?
+                Intent oTransition = new Intent(HomeActivity.this, FullDocumentScreen.class);
+                startActivity((oTransition));
             }
         });
         

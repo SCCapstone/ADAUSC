@@ -67,7 +67,7 @@ public class SerializationHelper {
             BufferedReader bufferedReader = new BufferedReader(oReader);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                int oSection = Integer.parseInt(line.substring(0, 1));//(int)line.charAt(0);
+                int oSection = Integer.parseInt(line.substring(0, 1));
                 oParentChildList.get(oSection - 1).add(line);
             }
             oReader.close();
@@ -79,21 +79,36 @@ public class SerializationHelper {
         return oParentChildList;
     }
 
-
-
-    public static boolean SerializeSection(String sSection){
+    public static boolean AddFavSection(String sSection){
         //serialize sSection to favs.ada
+        //cant write to assets files.....hmmmmmmm
         return true;
     }
 
-    public static boolean RemoveSection(String sSection){
+    public static String LoadFullDoc(){
+        //this is wicked slow.... not sure why
+        StringBuilder sDoc = new StringBuilder();
+        try {
+            InputStream oInput = SessionCache.m_oAppContext.getAssets().open(FULL_DOC_FILE_NAME);
+            InputStreamReader oReader = new InputStreamReader(oInput);
+            BufferedReader bufferedReader = new BufferedReader(oReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null){
+                sDoc.append(line);
+            }
+        } catch (Exception oEx){
+            //fail..so crash?? idk
+        }
+        return sDoc.toString();
+    }
+
+    public static boolean RemoveFavSection(String sSection){
         //remove sSection from favs.ada
         return true;
     }
 
-
-
     //region fields
     private static final String FAVORITES_FILE_NAME = "favs.ada";
-    private static final String METADATA_FILE_NAME = "Metadata.ada";
+    private static final String METADATA_FILE_NAME = "Metadata.ada"; //code title, space delimited
+    private static final String FULL_DOC_FILE_NAME = "2010ADAStandards.htm";
 }

@@ -108,7 +108,7 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
     @Override
     public boolean onChildClick(ExpandableListView expandableListView, View view, int i, int i2, long l) {
         SessionCache.m_oPreviousStandard = SessionCache.m_oCurrentStandard;
-        SessionCache.m_oCurrentStandard = SessionCache.m_oParentChildList.get(i).get(i2);
+        SessionCache.m_oCurrentStandard = SessionCache.m_oParentChildList.get(i).get(i2).substring(0, SessionCache.m_oParentChildList.get(i).get(i2).indexOf(' ')).trim();
         Intent oTransition = new Intent(BrowseScreen.this, SectionScreen.class);
         startActivity((oTransition));
         return false;

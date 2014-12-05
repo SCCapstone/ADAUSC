@@ -3,6 +3,8 @@ package edu.sc.cse.adausc;
 import android.app.Activity;
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 /**
@@ -16,8 +18,21 @@ public class SectionScreen extends Activity {
         oTitle = (TextView) findViewById(R.id.sectionTitle);
         oContent = (WebView) findViewById(R.id.sectionContent);
         oCode = (TextView) findViewById(R.id.sectionCode);
+        oIsFav = (CheckBox) findViewById(R.id.isFavChkBox);
         //deserialize current section .ada file
         oSection = SerializationHelper.Deserialize(SessionCache.m_oCurrentStandard);
+        oIsFav.setChecked(SessionCache.IsFavorite(oSection.getCode()));
+        oIsFav.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    //favorited
+                    SerializationHelper.AddFavSection(oSection.getCode());
+                } else {
+                    SerializationHelper.RemoveFavSection(oSection.getCode());
+                }
+            }
+        });
         oTitle.setText(oSection.getTitle());
         oContent.loadData("<html><body><font size=" + "\"" + m_iFontSize + "\">" +oSection.getSection()+"</font></body></html>", "text/html", null);
         oCode.setText(oSection.getCode());
@@ -28,5 +43,6 @@ public class SectionScreen extends Activity {
     TextView oTitle;
     WebView oContent;
     TextView oCode;
+    CheckBox oIsFav;
     int m_iFontSize = 5;
 }

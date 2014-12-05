@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Favorite"
-        android:id="@+id/checkBox"
+        android:id="@+id/isFavChkBox"
         android:layout_above="@+id/sectionContent"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
