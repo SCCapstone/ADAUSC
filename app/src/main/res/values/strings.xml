@@ -24,5 +24,10 @@
 
     <string name="contact_title">Contact the developers via e-mail:</string>
     <string name="contact_email"><a href="mailto:ada_usc@hotmail.com">ADA_USC@hotmail.com</a></string>
+    <string name="calc_park_inst">Enter the total number of parking spots in the text box. Then, click calculate.
+        The number of accessible parking spots needed will be calculated according to the total number of parking spots.</string>
+    <string name="calculate">Calculate</string>
+    <string name="instructions">Instructions</string>
+    <string name="testing">This text is only a test.</string>
 
 </resources>

@@ -25,6 +25,7 @@
         <activity android:label="ADA USC | About" android:name="edu.sc.cse.adausc.AboutScreen" />
         <activity android:label="ADA USC | Contact" android:name="edu.sc.cse.adausc.ContactScreen" />
         <activity android:label="ADA USC | Parking Calculator" android:name="edu.sc.cse.adausc.CalcParking" />
+        <activity android:label="ADA USC | Bathroom Stall Calculator" android:name="edu.sc.cse.adausc.CalcBathroom" />
     </application>
 
 </manifest>

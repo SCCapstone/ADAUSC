@@ -1,12 +1,16 @@
 package edu.sc.cse.adausc;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
@@ -20,6 +24,7 @@ import android.widget.EditText;
 public class CalcParking extends Activity{
 
     private Button btnCalculate;
+    private Button btnInstruct;
     int i, j;
 
     @Override
@@ -34,6 +39,7 @@ public class CalcParking extends Activity{
     public void pullInteger() {
         final EditText myInt = (EditText) findViewById(R.id.numberInput);
         btnCalculate = (Button) findViewById(R.id.button_calculate);
+        btnInstruct = (Button) findViewById(R.id.button_instruct);
 
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,22 +53,46 @@ public class CalcParking extends Activity{
                     calculateSpots();
                 }
 
+                //clear edittext box after button click?
+
+                //if you hit Calculate and the keyboard is hidden, it will appear.
+            }
+        });
+
+        btnInstruct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView x = (TextView) findViewById(R.id.instructText);
+                    //show/hide text
+                if (x.getVisibility() == View.VISIBLE){
+                    x.setVisibility(View.INVISIBLE);
+                }
+                else if (x.getVisibility() == View.INVISIBLE){
+                    x.setVisibility(View.VISIBLE);
+                }
             }
         });
     }
 
     public void editText() { //text when the int is valid
         TextView t = (TextView) findViewById(R.id.OutputText);
-        t.setText("Total spaces: " + i + "\nHandicap spaces required: " + j);
+        t.setText("Total spaces: " + i + "\nAccessible spaces required: " + j);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
+        //Hide keyboard on button click
+        InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+        //if you hit Calculate and the keyboard is hidden, will appear
+
         t.setVisibility(View.VISIBLE);
-        //add color Blue
+        //add color Blue?
     }
 
     public void editText2() { //text when the value entered isn't a positive integer
         TextView t = (TextView) findViewById(R.id.OutputText);
         t.setText("Error! Please enter a positive, non-zero number only.");
         t.setVisibility(View.VISIBLE);
-        //add color Red
+        //add color Red?
     }
 
     public void calculateSpots(){

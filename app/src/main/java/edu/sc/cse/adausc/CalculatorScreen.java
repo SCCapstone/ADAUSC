@@ -20,6 +20,7 @@ import android.view.View.OnClickListener;
 public class CalculatorScreen extends Activity {
 
     private Button btnParking;
+    private Button btnBathroom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +34,22 @@ public class CalculatorScreen extends Activity {
 
         //the buttons
         btnParking = (Button) findViewById(R.id.parking_button);
+        btnBathroom = (Button) findViewById(R.id.stall_button);
 
         //what the buttons do
         btnParking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalculatorScreen.this, CalcParking.class);
-                startActivity((intent));
+                Intent parking = new Intent(CalculatorScreen.this, CalcParking.class);
+                startActivity((parking));
+            }
+        });
+
+        btnBathroom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view2) {
+                Intent bathroom = new Intent (CalculatorScreen.this, CalcBathroom.class);
+                startActivity((bathroom));
             }
         });
     }

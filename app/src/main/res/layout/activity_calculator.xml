@@ -37,7 +37,6 @@
         android:typeface="normal"
         android:textColor="#E4E4E4"
         android:background="#393939"
-        android:enabled="false"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -45,7 +44,9 @@
         android:layout_below="@+id/parking_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
-        android:layout_alignStart="@id/parking_button" />
+        android:layout_alignStart="@id/parking_button"
+        android:layout_alignLeft="@id/parking_button"
+        android:onClick="show" />
 
     <Button
         android:layout_width="wrap_content"
