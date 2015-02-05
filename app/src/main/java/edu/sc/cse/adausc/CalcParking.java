@@ -33,7 +33,8 @@ public class CalcParking extends Activity{
         setContentView(R.layout.activity_c_parking);
         pullInteger();
 
-
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void pullInteger() {

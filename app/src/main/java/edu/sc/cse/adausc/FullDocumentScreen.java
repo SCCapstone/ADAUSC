@@ -15,5 +15,8 @@ public class FullDocumentScreen extends Activity {
         setContentView(R.layout.activity_fulldoc);
         WebView oContent = (WebView) findViewById(R.id.fullDoc);
         oContent.loadData(SerializationHelper.LoadFullDoc(), "text/html", null);
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

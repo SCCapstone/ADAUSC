@@ -24,5 +24,8 @@ public class CalcBathroom extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c_bathroom);
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

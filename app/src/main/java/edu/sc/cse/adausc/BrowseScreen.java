@@ -36,6 +36,9 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
         // setting list adapter
         expListView.setAdapter(listAdapter);
         expListView.setOnChildClickListener(this);
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     /*

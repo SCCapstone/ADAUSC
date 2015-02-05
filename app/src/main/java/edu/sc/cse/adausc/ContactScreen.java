@@ -13,6 +13,8 @@ public class ContactScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 }

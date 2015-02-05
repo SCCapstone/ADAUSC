@@ -13,6 +13,7 @@ public class AboutScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
 }

@@ -28,6 +28,9 @@ public class CalculatorScreen extends Activity {
         setContentView(R.layout.activity_calculator);
 
         addListenerOnButton();
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void addListenerOnButton() {

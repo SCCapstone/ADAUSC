@@ -17,15 +17,87 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:label="@string/section_label" android:name="edu.sc.cse.adausc.SectionScreen" />
-        <activity android:label="@string/favorites_label" android:name="edu.sc.cse.adausc.FavoriteScreen" />
-        <activity android:label="@string/browse_label" android:name="edu.sc.cse.adausc.BrowseScreen" />
-        <activity android:label="ADA USC | Document" android:name="edu.sc.cse.adausc.FullDocumentScreen" />
-        <activity android:label="@string/calculator_label" android:name="edu.sc.cse.adausc.CalculatorScreen" />
-        <activity android:label="ADA USC | About" android:name="edu.sc.cse.adausc.AboutScreen" />
-        <activity android:label="ADA USC | Contact" android:name="edu.sc.cse.adausc.ContactScreen" />
-        <activity android:label="ADA USC | Parking Calculator" android:name="edu.sc.cse.adausc.CalcParking" />
-        <activity android:label="ADA USC | Bathroom Stall Calculator" android:name="edu.sc.cse.adausc.CalcBathroom" />
+        <activity
+            android:label="@string/favorites_label"
+            android:name="edu.sc.cse.adausc.FavoriteScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="@string/browse_label"
+            android:name="edu.sc.cse.adausc.BrowseScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="@string/calculator_label"
+            android:name="edu.sc.cse.adausc.CalculatorScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="ADA USC | About"
+            android:name="edu.sc.cse.adausc.AboutScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="ADA USC | Contact"
+            android:name="edu.sc.cse.adausc.ContactScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="ADA USC | Document"
+            android:name="edu.sc.cse.adausc.FullDocumentScreen"
+            android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.HomeActivity" />
+        </activity>
+        <activity
+            android:label="ADA USC | Parking Calculator"
+            android:name="edu.sc.cse.adausc.CalcParking"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+        <activity
+            android:label="ADA USC | Bathroom Stall Calculator"
+            android:name="edu.sc.cse.adausc.CalcBathroom"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+        <activity
+            android:label="@string/section_label"
+            android:name="edu.sc.cse.adausc.SectionScreen"
+            android:parentActivityName="edu.sc.cse.adausc.BrowseScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.BrowseScreen" />
+        </activity>
     </application>
 
 </manifest>

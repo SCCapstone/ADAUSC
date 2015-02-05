@@ -24,6 +24,9 @@ public class FavoriteScreen extends ListActivity {
         m_oFavorites = SessionCache.getFavorites();
         //m_oFavoritesView = (ListView) findViewById(R.id.listFavorites);
         setListAdapter(new ArrayAdapter<String>(this, R.layout.favorite_item, m_oFavorites));
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

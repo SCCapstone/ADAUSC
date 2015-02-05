@@ -36,6 +36,9 @@ public class SectionScreen extends Activity {
         oTitle.setText(oSection.getTitle());
         oContent.loadData("<html><body><font size=" + "\"" + m_iFontSize + "\">" +oSection.getSection()+"</font></body></html>", "text/html", null);
         oCode.setText(oSection.getCode());
+
+        //enable return to home from action bar
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     //region fields
