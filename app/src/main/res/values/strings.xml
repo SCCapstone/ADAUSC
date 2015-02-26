@@ -5,13 +5,18 @@
     <!-- temporarily change this for demo
     <string name="section_label">ADA USC | Section XXX.X </string>
     -->
-    <string name="section_label">ADA USC | Browse</string>
-    <string name="browse_label">ADA USC | Browse</string>
-    <string name="calculator_label">ADA USC | Calculator</string>
-    <string name="favorites_label">ADA USC | Favorites</string>
+    <string name="section_label">ADA Access | Browse</string>
+    <string name="browse_label">ADA Access | Browse</string>
+    <string name="calculator_label">ADA Access | Calculator</string>
+    <string name="favorites_label">ADA Access | Favorites</string>
     <string name="about_label">About</string>
     <string name="contact_label">Contact</string>
     <string name="action_settings">Settings</string>
+    <string name="calc_parking_label">ADA Access | Parking Spot Calculator</string>
+    <string name="calc_bathroom_label">ADA Access | Bathroom Stall Calculator</string>
+    <string name="calc_doors_label">ADA Access | Door Dimensions Reference</string>
+    <string name="calc_hallways_label">ADA Access | Hallway Dimensions Reference</string>
+    <string name="calc_ramps_label">ADA Access | Ramp Elevation Reference</string>
 
     <string name="app_info">       ADA Mobile, meant for use on Android platforms and created under
         the MIT License, is designed for storing and displaying architectural standards set in place
