@@ -23,7 +23,9 @@
         android:minWidth="330dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="show" />
+        android:onClick="show"
+        android:clickable="true"
+        android:enabled="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -46,7 +48,9 @@
         android:layout_marginTop="33dp"
         android:layout_alignStart="@id/parking_button"
         android:layout_alignLeft="@id/parking_button"
-        android:onClick="show" />
+        android:onClick="show"
+        android:enabled="true"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -60,7 +64,7 @@
         android:typeface="normal"
         android:textColor="#393939"
         android:background="#E4E4E4"
-        android:enabled="false"
+        android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -69,7 +73,8 @@
         android:layout_below="@+id/stall_button"
         android:layout_alignLeft="@+id/stall_button"
         android:layout_alignStart="@+id/stall_button"
-        android:layout_marginTop="33dp" />
+        android:layout_marginTop="33dp"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -83,7 +88,7 @@
         android:typeface="normal"
         android:textColor="#E4E4E4"
         android:background="#393939"
-        android:enabled="false"
+        android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -91,7 +96,8 @@
         android:layout_marginTop="33dp"
         android:layout_below="@+id/door_button"
         android:layout_centerHorizontal="true"
-        android:layout_alignStart="@id/parking_button" />
+        android:layout_alignStart="@id/parking_button"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -105,7 +111,7 @@
         android:typeface="normal"
         android:textColor="#393939"
         android:background="#E4E4E4"
-        android:enabled="false"
+        android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -114,6 +120,7 @@
         android:layout_marginTop="33dp"
         android:layout_below="@+id/hallway_button"
         android:layout_centerHorizontal="true"
-        android:layout_alignStart="@id/parking_button" />
+        android:layout_alignStart="@id/parking_button"
+        android:clickable="true" />
 
 </RelativeLayout>

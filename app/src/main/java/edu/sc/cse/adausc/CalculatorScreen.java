@@ -21,6 +21,9 @@ public class CalculatorScreen extends Activity {
 
     private Button btnParking;
     private Button btnBathroom;
+    private Button btnDoors;
+    private Button btnHallways;
+    private Button btnRamps;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,11 +41,14 @@ public class CalculatorScreen extends Activity {
         //the buttons
         btnParking = (Button) findViewById(R.id.parking_button);
         btnBathroom = (Button) findViewById(R.id.stall_button);
+        btnDoors = (Button) findViewById(R.id.door_button);
+        btnHallways = (Button) findViewById(R.id.hallway_button);
+        btnRamps = (Button) findViewById(R.id.ramp_button);
 
         //what the buttons do
         btnParking.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View viewPark) {
                 Intent parking = new Intent(CalculatorScreen.this, CalcParking.class);
                 startActivity((parking));
             }
@@ -50,9 +56,33 @@ public class CalculatorScreen extends Activity {
 
         btnBathroom.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view2) {
+            public void onClick(View viewBathroom) {
                 Intent bathroom = new Intent (CalculatorScreen.this, CalcBathroom.class);
                 startActivity((bathroom));
+            }
+        });
+
+        btnDoors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewDoors) {
+                Intent doors = new Intent (CalculatorScreen.this, CalcDoors.class);
+                startActivity((doors));
+            }
+        });
+
+        btnHallways.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewHallways) {
+                Intent hallways = new Intent (CalculatorScreen.this, CalcHallways.class);
+                startActivity((hallways));
+            }
+        });
+
+        btnRamps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewRamps) {
+                Intent ramps = new Intent (CalculatorScreen.this, CalcRamps.class);
+                startActivity((ramps));
             }
         });
     }

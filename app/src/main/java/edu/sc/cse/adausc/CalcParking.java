@@ -20,6 +20,7 @@ import android.widget.EditText;
  */
 
 //Screen for the Parking Spot Calculator
+  //To do: Close keyboard on "Enter" press?
 
 public class CalcParking extends Activity{
 

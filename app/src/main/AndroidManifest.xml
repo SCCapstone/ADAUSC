@@ -90,6 +90,33 @@
                 android:value="sc.edu.cse.adausc.CalculatorScreen" />
         </activity>
         <activity
+            android:label="ADA Access | Door Dimensions"
+            android:name="edu.sc.cse.adausc.CalcDoors"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+        <activity
+            android:label="ADA Access | Hallway Dimensions"
+            android:name="edu.sc.cse.adausc.CalcHallways"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+        <activity
+            android:label="ADA Access | Ramp Elevation"
+            android:name="edu.sc.cse.adausc.CalcRamps"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+        <activity
             android:label="@string/section_label"
             android:name="edu.sc.cse.adausc.SectionScreen"
             android:parentActivityName="edu.sc.cse.adausc.BrowseScreen">
@@ -98,6 +125,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="sc.edu.cse.adausc.BrowseScreen" />
         </activity>
+
     </application>
 
 </manifest>
