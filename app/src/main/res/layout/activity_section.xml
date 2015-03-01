@@ -42,4 +42,12 @@
         android:layout_above="@+id/sectionContent"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sectionDiagram"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/isFavChkBox"
+        android:layout_toStartOf="@+id/isFavChkBox" />
 </RelativeLayout>

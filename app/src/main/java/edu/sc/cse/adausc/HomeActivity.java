@@ -89,7 +89,10 @@ public class HomeActivity extends Activity {
 
     public void OnStartUp(){
         InputInitialization(); //set up event listeners
-        SessionCache.Initialize(this);
+        if(SessionCache.m_bInitialized == false) {
+            SessionCache.Initialize(this);
+            SessionCache.m_bInitialized = true;
+        }
     }
     
     //endregion methods

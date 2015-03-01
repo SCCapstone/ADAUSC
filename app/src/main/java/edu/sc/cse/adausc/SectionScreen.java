@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -19,6 +20,7 @@ public class SectionScreen extends Activity {
         oContent = (WebView) findViewById(R.id.sectionContent);
         oCode = (TextView) findViewById(R.id.sectionCode);
         oIsFav = (CheckBox) findViewById(R.id.isFavChkBox);
+        oDiagram = (ImageView) findViewById(R.id.sectionDiagram);
         //deserialize current section .ada file
         oSection = SerializationHelper.Deserialize(SessionCache.m_oCurrentStandard);
         oIsFav.setChecked(SessionCache.IsFavorite(oSection.getCode()));
@@ -37,6 +39,13 @@ public class SectionScreen extends Activity {
         oContent.loadData("<html><body><font size=" + "\"" + m_iFontSize + "\">" +oSection.getSection()+"</font></body></html>", "text/html", null);
         oCode.setText(oSection.getCode());
 
+        //lets check our cache to see if there exists a diagram for this section
+        String oParentSection = oSection.getCode().substring(0, oSection.getCode().indexOf('.'));
+        if(SessionCache.m_oSectionDiagrams.containsKey(oParentSection)){
+            String diagramNumber = SessionCache.m_oSectionDiagrams.get(oSection.getCode().substring(0, oSection.getCode().indexOf('.')));
+            oDiagram.setImageBitmap(SerializationHelper.GetDiagramBitmap(diagramNumber));
+        }
+
         //enable return to home from action bar
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -47,5 +56,6 @@ public class SectionScreen extends Activity {
     WebView oContent;
     TextView oCode;
     CheckBox oIsFav;
-    int m_iFontSize = 5;
+    ImageView oDiagram;
+    int m_iFontSize = 6;
 }

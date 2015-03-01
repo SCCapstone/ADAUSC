@@ -21,7 +21,7 @@ public class FavoriteScreen extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_favorites);
-        m_oFavorites = SessionCache.getFavorites();
+        m_oFavorites = SessionCache.m_oFavorites;
         //m_oFavoritesView = (ListView) findViewById(R.id.listFavorites);
         setListAdapter(new ArrayAdapter<String>(this, R.layout.favorite_item, m_oFavorites));
 

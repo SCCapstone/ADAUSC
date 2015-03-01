@@ -1,13 +1,20 @@
 package edu.sc.cse.adausc;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by dohertsm on 10/28/2014.
@@ -19,28 +26,51 @@ public class SerializationHelper {
     public static ArrayList<String> DeserializeFavorites(Context oContext){
         //deserialize and store favorites in sessioncache
 
-        //all this is for testing, we will move to xml soon.
-
-        //this is not a good way to go about it, just using it for testing purposes
         ArrayList<String> oFavList = new ArrayList<String>();
 
         try {
-            InputStream oFavorites = oContext.getAssets().open(FAVORITES_FILE_NAME);
-            InputStreamReader oReader = new InputStreamReader(oFavorites);
-            BufferedReader bufferedReader = new BufferedReader(oReader);
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(oContext.getFilesDir() + File.separator + FAVORITES_FILE_NAME));
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 oFavList.add(line);
             }
-            oFavorites.close();
+
+        } catch (IOException e) {
+            //create this file if it doesnt
+            try {
+                File oFavs = new File(oContext.getFilesDir(), FAVORITES_FILE_NAME);
+            } catch (Exception ex){
+                ex.printStackTrace();
+            }
+        }
+
+        return oFavList;
+    }
+
+    public static HashMap<String, String> DeserializeDiagramLinker(Context oContext){
+        //deserialize and store diagram/section associations
+
+        HashMap<String, String> oLinker = new HashMap<String, String>();
+        try {
+            InputStream oLinkerStream = oContext.getAssets().open(DIAG_SEC_LINKER_FILE_NAME);
+            InputStreamReader oReader = new InputStreamReader(oLinkerStream);
+            BufferedReader bufferedReader = new BufferedReader(oReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                //format: pic# section#
+                int spaceIndex = line.indexOf(' ');
+                String picNum = line.substring(0, spaceIndex);
+                String sectionNum = line.substring(spaceIndex+1, line.indexOf('.'));//line.length());
+                oLinker.put(sectionNum, picNum);
+            }
+            oLinkerStream.close();
             oReader.close();
             bufferedReader.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        //SessionCache.PopulateFavorites(oFavList);
-        return oFavList;
+        return oLinker;
     }
 
     public static StandardSection Deserialize(String sSection){
@@ -54,6 +84,21 @@ public class SerializationHelper {
             oEx.printStackTrace();
         }
         return  oSection;
+    }
+
+    public static Bitmap GetDiagramBitmap(String diagramNumber){
+        //our decoded gif object to set in sectionstandards view
+        Bitmap bits = null;
+
+        try {
+            //well structured string literal
+            InputStream bitmap= SessionCache.m_oAppContext.getAssets().open("ADAGIFs/diagram"+diagramNumber+".gif");
+            bits = BitmapFactory.decodeStream(bitmap);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        return bits;
     }
 
     public static ArrayList<ArrayList<String>> DeserializeMetadata(Context oContext) {
@@ -80,9 +125,19 @@ public class SerializationHelper {
     }
 
     public static boolean AddFavSection(String sSection){
-        //serialize sSection to favs.ada
-        //cant write to assets files.....hmmmmmmm
-        return true;
+        try{
+            //SessionCache.m_oAppContext.openFileOutput(FAVORITES_FILE_NAME, Context.MODE_APPEND);
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(SessionCache.m_oAppContext.getFilesDir()+File.separator+FAVORITES_FILE_NAME, true));
+            bufferedWriter.write(sSection+"\n");
+            bufferedWriter.close();
+            if(!SessionCache.m_oFavorites.contains(sSection)) {
+                SessionCache.m_oFavorites.add(sSection);
+            }
+            return true;
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public static String LoadFullDoc(){
@@ -103,12 +158,24 @@ public class SerializationHelper {
     }
 
     public static boolean RemoveFavSection(String sSection){
-        //remove sSection from favs.ada
+        try{
+            //recreate the fav.txt file empty and rewrite all favorites
+            SessionCache.m_oFavorites.remove(sSection);
+            File oFavs = new File(SessionCache.m_oAppContext.getFilesDir(), FAVORITES_FILE_NAME);
+            BufferedWriter oWriter = new BufferedWriter(new FileWriter(oFavs));
+            for(int i=0; i<SessionCache.m_oFavorites.size(); i++){
+                oWriter.write(SessionCache.m_oFavorites.get(i)+"\n");
+            }
+            oWriter.close();
+        } catch (IOException ex){
+
+        }
         return true;
     }
 
     //region fields
-    private static final String FAVORITES_FILE_NAME = "favs.ada";
+    private static final String FAVORITES_FILE_NAME = "fav.txt";
     private static final String METADATA_FILE_NAME = "Metadata.ada"; //code title, space delimited
     private static final String FULL_DOC_FILE_NAME = "2010ADAStandards.htm";
+    private static final String DIAG_SEC_LINKER_FILE_NAME = "diagramlinker.txt";
 }
