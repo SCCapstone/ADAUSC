@@ -7,13 +7,14 @@
     <ImageView
         android:layout_width="250dp"
         android:layout_height="125dp"
-        android:id="@+id/imageView"
+        android:id="@+id/ableLogo"
         android:src="@drawable/ablesc"
         android:scaleType="fitXY"
         android:cropToPadding="false"
         android:contentDescription="able SC logo"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,10 +26,10 @@
         android:minHeight="135dp"
         android:maxHeight="135dp"
         android:onClick="show"
-        android:background="#E4E4E4"
+        android:background="#99dcf6"
         android:textColor="#393939"
         android:layout_toStartOf="@+id/buttonCalculator"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/ableLogo"
         android:layout_toLeftOf="@+id/centerPoint"
         android:layout_marginRight="8dp"
         android:layout_marginTop="25dp"
@@ -38,16 +39,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculator"
+        android:text="@string/calc_button_title"
         android:id="@+id/buttonCalculator"
         android:minWidth="135dp"
         android:maxWidth="135dp"
         android:minHeight="135dp"
         android:maxHeight="135dp"
         android:onClick="show"
-        android:background="#393939"
-        android:textColor="#E4E4E4"
-        android:layout_below="@+id/imageView"
+        android:background="#269ecc"
+        android:textColor="#393939"
+        android:layout_below="@+id/ableLogo"
         android:layout_toRightOf="@+id/centerPoint"
         android:layout_marginTop="25dp"
         android:layout_marginLeft="8dp"
@@ -67,8 +68,8 @@
         android:layout_alignLeft="@+id/buttonBrowse"
         android:layout_alignStart="@+id/buttonBrowse"
         android:onClick="show"
-        android:background="#393939"
-        android:textColor="#E4E4E4"
+        android:background="#269ecc"
+        android:textColor="#393939"
         android:layout_marginTop="8dp"
         android:clickable="true" />
 
@@ -86,7 +87,7 @@
         android:layout_alignLeft="@+id/buttonCalculator"
         android:layout_alignStart="@+id/buttonCalculator"
         android:onClick="show"
-        android:background="#E4E4E4"
+        android:background="#99dcf6"
         android:textColor="#393939"
         android:clickable="true" />
 
@@ -110,7 +111,8 @@
         android:maxWidth="135dp"
         android:layout_alignStart="@+id/buttonFavorites"
         android:layout_alignParentLeft="false"
-        android:layout_alignLeft="@+id/buttonFavorites" />
+        android:layout_alignLeft="@+id/buttonFavorites"
+        android:background="#ffef6d" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -127,6 +129,7 @@
         android:layout_below="@+id/buttonAbout"
         android:layout_alignRight="@+id/buttonDocument"
         android:layout_toLeftOf="@+id/buttonDocument"
-        android:maxWidth="135dp" />
+        android:maxWidth="135dp"
+        android:background="#ffef6d" />
 
 </RelativeLayout>

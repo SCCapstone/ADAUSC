@@ -12,18 +12,20 @@
     <string name="about_label">About</string>
     <string name="contact_label">Contact</string>
     <string name="action_settings">Settings</string>
+
+    <string name="calc_button_title">Quick\nReference</string>
     <string name="calc_parking_label">ADA Access | Parking Spot Calculator</string>
     <string name="calc_bathroom_label">ADA Access | Bathroom Stall Calculator</string>
     <string name="calc_doors_label">ADA Access | Door Dimensions Reference</string>
     <string name="calc_hallways_label">ADA Access | Hallway Dimensions Reference</string>
     <string name="calc_ramps_label">ADA Access | Ramp Elevation Reference</string>
 
-    <string name="app_info">       ADA Mobile, meant for use on Android platforms and created under
+    <string name="app_info">       ADA Access, meant for use on Android platforms and created under
         the MIT License, is designed for storing and displaying architectural standards set in place
         by the Americans with Disabilities Act (ADA) most recently updated in 2010. These standards
         include specifications for handicap-accessible construction of dorms, social service centers,
         medical care facilities, etc. These specifications include door widths and ramp angles and
-        lengths, among many more specific measurements and requirements. ADA Mobile makes it easy and
+        lengths, among many more specific measurements and requirements. ADA Access makes it easy and
         efficient to access these standards when in the field or when a stationary and/or written
         source is not available.</string>
 

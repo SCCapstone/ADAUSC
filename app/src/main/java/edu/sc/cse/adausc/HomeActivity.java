@@ -2,11 +2,13 @@ package edu.sc.cse.adausc;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class HomeActivity extends Activity {
 
@@ -16,6 +18,7 @@ public class HomeActivity extends Activity {
     private Button btDocument;
     private Button btAbout;
     private Button btContact;
+    ImageView homeLogo;
 
     //region methods
 
@@ -36,6 +39,17 @@ public class HomeActivity extends Activity {
         btDocument = (Button) findViewById(R.id.buttonDocument);
         btAbout = (Button) findViewById(R.id.buttonAbout);
         btContact = (Button) findViewById(R.id.buttonContact);
+        homeLogo = (ImageView)findViewById(R.id.ableLogo);
+
+        homeLogo.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://www.able-sc.org/get-involved/donate/"));
+                startActivity(intent);
+            }
+        });
 
         btBrowse.setOnClickListener(new View.OnClickListener() {
             @Override

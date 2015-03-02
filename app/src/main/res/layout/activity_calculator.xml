@@ -15,8 +15,7 @@
         android:textStyle="normal"
         android:textSize="22sp"
         android:typeface="normal"
-        android:textColor="#393939"
-        android:background="#E4E4E4"
+        android:background="#99dcf6"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -25,7 +24,8 @@
         android:layout_centerHorizontal="true"
         android:onClick="show"
         android:clickable="true"
-        android:enabled="true" />
+        android:enabled="true"
+        android:textColor="#393939" />
 
     <Button
         android:layout_width="wrap_content"
@@ -37,8 +37,7 @@
         android:textStyle="normal"
         android:textSize="22sp"
         android:typeface="normal"
-        android:textColor="#E4E4E4"
-        android:background="#393939"
+        android:background="#269ecc"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:maxWidth="330dp"
@@ -50,7 +49,8 @@
         android:layout_alignLeft="@id/parking_button"
         android:onClick="show"
         android:enabled="true"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#393939" />
 
     <Button
         android:layout_width="wrap_content"
@@ -62,8 +62,7 @@
         android:textStyle="normal"
         android:textSize="22sp"
         android:typeface="normal"
-        android:textColor="#393939"
-        android:background="#E4E4E4"
+        android:background="#99dcf6"
         android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
@@ -74,7 +73,8 @@
         android:layout_alignLeft="@+id/stall_button"
         android:layout_alignStart="@+id/stall_button"
         android:layout_marginTop="33dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#393939" />
 
     <Button
         android:layout_width="wrap_content"
@@ -86,8 +86,7 @@
         android:textStyle="normal"
         android:textSize="22sp"
         android:typeface="normal"
-        android:textColor="#E4E4E4"
-        android:background="#393939"
+        android:background="#269ecc"
         android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
@@ -97,7 +96,8 @@
         android:layout_below="@+id/door_button"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@id/parking_button"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#393939" />
 
     <Button
         android:layout_width="wrap_content"
@@ -109,8 +109,7 @@
         android:textStyle="normal"
         android:textSize="22sp"
         android:typeface="normal"
-        android:textColor="#393939"
-        android:background="#E4E4E4"
+        android:background="#99dcf6"
         android:enabled="true"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
@@ -121,6 +120,7 @@
         android:layout_below="@+id/hallway_button"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@id/parking_button"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#393939" />
 
 </RelativeLayout>

@@ -45,7 +45,7 @@
                 android:value="sc.edu.cse.adausc.HomeActivity" />
         </activity>
         <activity
-            android:label="ADA USC | About"
+            android:label="ADA Access | About"
             android:name="edu.sc.cse.adausc.AboutScreen"
             android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -54,7 +54,7 @@
                 android:value="sc.edu.cse.adausc.HomeActivity" />
         </activity>
         <activity
-            android:label="ADA USC | Contact"
+            android:label="ADA Access | Contact"
             android:name="edu.sc.cse.adausc.ContactScreen"
             android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -63,7 +63,7 @@
                 android:value="sc.edu.cse.adausc.HomeActivity" />
         </activity>
         <activity
-            android:label="ADA USC | Document"
+            android:label="ADA Access | Document"
             android:name="edu.sc.cse.adausc.FullDocumentScreen"
             android:parentActivityName="edu.sc.cse.adausc.HomeActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
