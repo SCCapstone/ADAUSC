@@ -5,16 +5,19 @@
     android:paddingTop="20dp">
 
     <ImageView
-        android:layout_width="250dp"
+        android:layout_width="215dp"
         android:layout_height="125dp"
         android:id="@+id/ableLogo"
         android:src="@drawable/ablesc"
-        android:scaleType="fitXY"
         android:cropToPadding="false"
         android:contentDescription="able SC logo"
+        android:clickable="true"
+        android:layout_alignLeft="@+id/buttonBrowse"
+        android:layout_alignStart="@+id/buttonBrowse"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:clickable="true" />
+        android:layout_alignRight="@+id/buttonCalculator"
+        android:layout_alignEnd="@+id/buttonCalculator"
+        android:scaleType="centerInside" />
 
     <Button
         android:layout_width="wrap_content"
@@ -32,7 +35,7 @@
         android:layout_below="@+id/ableLogo"
         android:layout_toLeftOf="@+id/centerPoint"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
         android:clickable="true" />
 
@@ -50,7 +53,7 @@
         android:textColor="#393939"
         android:layout_below="@+id/ableLogo"
         android:layout_toRightOf="@+id/centerPoint"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         android:clickable="true" />
