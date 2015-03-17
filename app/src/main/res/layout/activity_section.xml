@@ -3,6 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Centered dummy textview for formatting purposes -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/centerPoint"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,15 +32,15 @@
         />
 
     <WebView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sectionContent"
         android:layout_below="@+id/sectionCode"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/centerPoint" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -40,14 +48,17 @@
         android:text="Favorite"
         android:id="@+id/isFavChkBox"
         android:layout_above="@+id/sectionContent"
+        android:layout_marginRight="5dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
         android:id="@+id/sectionDiagram"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/isFavChkBox"
-        android:layout_toStartOf="@+id/isFavChkBox" />
+        android:layout_alignTop="@+id/centerPoint" />
 </RelativeLayout>
