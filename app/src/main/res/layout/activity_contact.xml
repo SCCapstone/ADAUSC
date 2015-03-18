@@ -3,26 +3,100 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:id="@+id/">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/contact_title"
-        android:id="@+id/textView"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp" />
+        android:id="@+id/EmailTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/contact_email"
-        android:id="@+id/textView2"
+        android:id="@+id/Email"
         android:layout_gravity="center_horizontal"
-        android:autoLink="email"
         android:clickable="true"
-        android:textSize="20dp"
-        android:layout_marginTop="10dp" />
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:autoLink="email"
+        android:textColorLink="#009cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/contact_text"
+        android:id="@+id/ContactText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/contact_divider"
+        android:id="@+id/Divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/contact_welcome"
+        android:id="@+id/ContactWelcome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/ablesc_link"
+        android:id="@+id/ABLESC_link"
+        android:layout_gravity="center_horizontal"
+        android:autoLink="web"
+        android:clickable="true"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorLink="#009cff"
+        android:layout_marginBottom="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AbleSC_ContactLogo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ablesc_contact"
+        android:longClickable="false"
+        android:cropToPadding="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-30dp" />
+
 </LinearLayout>

@@ -30,7 +30,13 @@
         source is not available.</string>
 
     <string name="contact_title">Contact the developers via e-mail:</string>
-    <string name="contact_email"><a href="mailto:ada_usc@hotmail.com">ADA_USC@hotmail.com</a></string>
+    <string name="contact_email"><a href="mailto:contactadaaccess@gmail.com">ContactADAAccess@gmail.com</a></string>
+    <string name="contact_text">     Feel free to contact us with any bug reports, questions, or general feedback. We will reply to your message
+        as soon as possible!</string>
+    <string name="contact_divider">--------------------------------------------</string>
+    <string name="contact_welcome">Visit ABLE South Carolina's web site to read more about the company and its purpose!</string>
+    <string name="ablesc_link"><a href="http://www.able-sc.org/">http://www.ABLE-SC.org</a></string>
+
     <string name="calc_park_inst">Enter the total number of parking spots in the text box. Then, click calculate.
         The number of accessible parking spots needed will be calculated according to the total number of parking spots.</string>
     <string name="calculate">Calculate</string>
