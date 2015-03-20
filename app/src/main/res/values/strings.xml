@@ -42,5 +42,7 @@
     <string name="calculate">Calculate</string>
     <string name="instructions">Instructions</string>
     <string name="testing">This text is only a test.</string>
+    <string name="wheelchair_test1"><b>Wheelchair Accessible Stall Information</b></string>
+    <string name="wheelchair_test2"><b>Ambulatory Accessible Stall Information</b></string>
 
 </resources>

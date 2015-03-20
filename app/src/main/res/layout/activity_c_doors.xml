@@ -25,50 +25,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Door openings must provide a clear minimum width of 32 inches."
-        android:id="@+id/textView2"
-        android:textSize="17sp"
-        android:paddingBottom="5sp"
-        android:paddingLeft="15sp"
-        android:paddingTop="5sp"
-        android:paddingRight="15sp"
-        android:layout_below="@+id/textHeader"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hinged doors must open 90 degrees."
-        android:id="@+id/textView3"
-        android:textSize="17sp"
-        android:paddingBottom="5sp"
-        android:paddingLeft="15sp"
-        android:paddingTop="5sp"
-        android:paddingRight="15sp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thresholds cannot be more than ½ inch high."
+        android:text=""
         android:id="@+id/textView4"
         android:textSize="17sp"
         android:paddingBottom="5sp"
         android:paddingLeft="15sp"
         android:paddingTop="5sp"
         android:paddingRight="15sp"
-        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textHeader"
+        android:layout_alignBottom="@+id/textHeader" />
 
     <Button
         android:layout_width="wrap_content"

@@ -54,13 +54,22 @@ public class CalculatorScreen extends Activity {
             }
         });
 
-        btnBathroom.setOnClickListener(new View.OnClickListener() {
+        /*btnBathroom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewBathroom) {
                 Intent bathroom = new Intent (CalculatorScreen.this, CalcBathroom.class);
                 startActivity((bathroom));
             }
+        });*/
+
+        btnBathroom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewBathroom) {
+                Intent bathroom = new Intent (CalculatorScreen.this, QRbathroom.class);
+                startActivity((bathroom));
+            }
         });
+
 
         btnDoors.setOnClickListener(new View.OnClickListener() {
             @Override

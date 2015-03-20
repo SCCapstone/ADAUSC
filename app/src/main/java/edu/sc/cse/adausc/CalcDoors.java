@@ -40,21 +40,27 @@ public class CalcDoors extends Activity{
             public void onClick(View viewSwing) {
                 TextView txtSwing = (TextView) findViewById(R.id.infoText);
                 txtSwing.setVisibility(View.VISIBLE);
-                txtSwing.setText("Maneuvering clearances for swinging doors: \n" +
+                txtSwing.setText("Door openings must provide a clear minimum width of 32 inches. \n" +
                         "\n" +
-                        "*Approach from front, pull: Minimum 60 inches perpendicular to doorway and 18 inches parallel to doorway\n" +
+                        "Hinged doors must open 90 degrees. \n" +
                         "\n" +
-                        "*Approach from front, push: Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
+                        "Thresholds cannot be more than ½ inch high. \n" +
                         "\n" +
-                        "*Approach from hinge side, pull: Minimum 60 inches perpendicular to doorway and 36 inches parallel to doorway\n" +
+                        "Maneuvering clearances for swinging doors: \n" +
                         "\n" +
-                        "*Approach from hinge side, push: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
+                        "Approach from front, pull: Minimum 60 inches perpendicular to doorway and 18 inches parallel to doorway\n" +
                         "\n" +
-                        "*Approach from latch/knob side, pull: Minimum 48 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
+                        "Approach from front, push: Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
                         "\n" +
-                        "*Approach from latch/knob side, push: Minimum 42 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
+                        "Approach from hinge side, pull: Minimum 60 inches perpendicular to doorway and 36 inches parallel to doorway\n" +
                         "\n" +
-                        "*See Section 404 for more detail and graphics.\n");
+                        "Approach from hinge side, push: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
+                        "\n" +
+                        "Approach from latch/knob side, pull: Minimum 48 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
+                        "\n" +
+                        "Approach from latch/knob side, push: Minimum 42 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
+                        "\n" +
+                        "See Section 404 for more detail and graphics.\n");
             }
         });
 
@@ -63,17 +69,23 @@ public class CalcDoors extends Activity{
             public void onClick(View viewSlideFold) {
                 TextView txtSlideFold = (TextView) findViewById(R.id.infoText);
                 txtSlideFold.setVisibility(View.VISIBLE);
-                txtSlideFold.setText("Maneuvering clearances for sliding/folding doors:\n" +
+                txtSlideFold.setText("Door openings must provide a clear minimum width of 32 inches. \n" +
                         "\n" +
-                        "*Approach from front:  Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
+                        "Hinged doors must open 90 degrees. \n" +
                         "\n" +
-                        "*Approach from side: Minimum 42 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
+                        "Thresholds cannot be more than ½ inch high. \n" +
                         "\n" +
-                        "*Approach from hinge side: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
+                        "Maneuvering clearances for sliding/folding doors:\n" +
                         "\n" +
-                        "*Approach from latch/knob side: Minimum 42 inches perpendicular to doorway and 24 inches parallel doorway\n" +
+                        "Approach from front:  Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
                         "\n" +
-                        "*See Section 404 for more detail and graphics.\n");
+                        "Approach from side: Minimum 42 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
+                        "\n" +
+                        "Approach from hinge side: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
+                        "\n" +
+                        "Approach from latch/knob side: Minimum 42 inches perpendicular to doorway and 24 inches parallel doorway\n" +
+                        "\n" +
+                        "See Section 404 for more detail and graphics.\n");
             }
         });
     }

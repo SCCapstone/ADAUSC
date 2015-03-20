@@ -126,6 +126,17 @@
                 android:value="sc.edu.cse.adausc.BrowseScreen" />
         </activity>
 
+        <!-- Second Style Quick Reference Pages -->
+        <activity
+            android:label="@string/calc_bathroom_label"
+            android:name="edu.sc.cse.adausc.QRbathroom"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+
     </application>
 
 </manifest>
