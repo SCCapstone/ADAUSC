@@ -137,6 +137,16 @@
                 android:value="sc.edu.cse.adausc.CalculatorScreen" />
         </activity>
 
+        <activity
+            android:label="@string/calc_doors_label"
+            android:name="edu.sc.cse.adausc.QRdoors"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+
     </application>
 
 </manifest>

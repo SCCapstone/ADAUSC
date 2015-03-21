@@ -71,10 +71,18 @@ public class CalculatorScreen extends Activity {
         });
 
 
-        btnDoors.setOnClickListener(new View.OnClickListener() {
+        /*btnDoors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewDoors) {
                 Intent doors = new Intent (CalculatorScreen.this, CalcDoors.class);
+                startActivity((doors));
+            }
+        });*/
+
+        btnDoors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View viewDoors) {
+                Intent doors = new Intent (CalculatorScreen.this, QRdoors.class);
                 startActivity((doors));
             }
         });
