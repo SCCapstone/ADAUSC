@@ -46,21 +46,14 @@ public class CalculatorScreen extends Activity {
         btnRamps = (Button) findViewById(R.id.ramp_button);
 
         //what the buttons do
+
         btnParking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewPark) {
-                Intent parking = new Intent(CalculatorScreen.this, CalcParking.class);
+                Intent parking = new Intent(CalculatorScreen.this, QRparking.class);
                 startActivity((parking));
             }
         });
-
-        /*btnBathroom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View viewBathroom) {
-                Intent bathroom = new Intent (CalculatorScreen.this, CalcBathroom.class);
-                startActivity((bathroom));
-            }
-        });*/
 
         btnBathroom.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,14 +63,6 @@ public class CalculatorScreen extends Activity {
             }
         });
 
-
-        /*btnDoors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View viewDoors) {
-                Intent doors = new Intent (CalculatorScreen.this, CalcDoors.class);
-                startActivity((doors));
-            }
-        });*/
 
         btnDoors.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,7 +75,7 @@ public class CalculatorScreen extends Activity {
         btnHallways.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewHallways) {
-                Intent hallways = new Intent (CalculatorScreen.this, CalcHallways.class);
+                Intent hallways = new Intent (CalculatorScreen.this, QRhallways.class);
                 startActivity((hallways));
             }
         });
@@ -98,7 +83,7 @@ public class CalculatorScreen extends Activity {
         btnRamps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewRamps) {
-                Intent ramps = new Intent (CalculatorScreen.this, CalcRamps.class);
+                Intent ramps = new Intent (CalculatorScreen.this, QRramps.class);
                 startActivity((ramps));
             }
         });

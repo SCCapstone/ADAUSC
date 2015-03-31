@@ -35,7 +35,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calculate"
+        android:text="calculate"
         android:id="@+id/button_calculate"
         android:layout_marginTop="50dp"
         android:paddingLeft="70dp"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/testing"
+        android:text="test"
         android:id="@+id/OutputText"
         android:visibility="invisible"
         android:layout_marginTop="29dp"
@@ -67,7 +67,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/instructions"
+        android:text="instructions"
         android:id="@+id/button_instruct"
         android:paddingLeft="55dp"
         android:paddingRight="55dp"

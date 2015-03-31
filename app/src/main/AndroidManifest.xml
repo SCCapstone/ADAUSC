@@ -71,51 +71,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="sc.edu.cse.adausc.HomeActivity" />
         </activity>
-        <activity
-            android:label="@string/calc_parking_label"
-            android:name="edu.sc.cse.adausc.CalcParking"
-            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
-        <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="sc.edu.cse.adausc.CalculatorScreen" />
-        </activity>
-        <activity
-            android:label="@string/calc_bathroom_label"
-            android:name="edu.sc.cse.adausc.CalcBathroom"
-            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="sc.edu.cse.adausc.CalculatorScreen" />
-        </activity>
-        <activity
-            android:label="@string/calc_doors_label"
-            android:name="edu.sc.cse.adausc.CalcDoors"
-            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="sc.edu.cse.adausc.CalculatorScreen" />
-        </activity>
-        <activity
-            android:label="@string/calc_hallways_label"
-            android:name="edu.sc.cse.adausc.CalcHallways"
-            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="sc.edu.cse.adausc.CalculatorScreen" />
-        </activity>
-        <activity
-            android:label="@string/calc_ramps_label"
-            android:name="edu.sc.cse.adausc.CalcRamps"
-            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="sc.edu.cse.adausc.CalculatorScreen" />
-        </activity>
+
         <activity
             android:label="@string/section_label"
             android:name="edu.sc.cse.adausc.SectionScreen"
@@ -128,7 +84,7 @@
 
         <!-- Second Style Quick Reference Pages -->
         <activity
-            android:label="@string/calc_bathroom_label"
+            android:label="@string/QR_bathroom_label"
             android:name="edu.sc.cse.adausc.QRbathroom"
             android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -138,8 +94,38 @@
         </activity>
 
         <activity
-            android:label="@string/calc_doors_label"
+            android:label="@string/QR_doors_label"
             android:name="edu.sc.cse.adausc.QRdoors"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+
+        <activity
+        android:label="@string/QR_hallways_label"
+        android:name="edu.sc.cse.adausc.QRhallways"
+        android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+
+        <activity
+            android:label="@string/QR_ramps_label"
+            android:name="edu.sc.cse.adausc.QRramps"
+            android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sc.edu.cse.adausc.CalculatorScreen" />
+        </activity>
+
+        <activity
+            android:label="@string/QR_parking_label"
+            android:name="edu.sc.cse.adausc.QRparking"
             android:parentActivityName="edu.sc.cse.adausc.CalculatorScreen">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

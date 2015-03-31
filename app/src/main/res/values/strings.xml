@@ -14,11 +14,11 @@
     <string name="action_settings">Settings</string>
 
     <string name="calc_button_title">Quick\nReference</string>
-    <string name="calc_parking_label">ADA Access | Parking Spot Calculator</string>
-    <string name="calc_bathroom_label">ADA Access | Bathroom Stall Calculator</string>
-    <string name="calc_doors_label">ADA Access | Door Dimensions Reference</string>
-    <string name="calc_hallways_label">ADA Access | Hallway Dimensions Reference</string>
-    <string name="calc_ramps_label">ADA Access | Ramp Elevation Reference</string>
+    <string name="QR_parking_label">ADA Access | Parking Spot Calculator</string>
+    <string name="QR_bathroom_label">ADA Access | Bathroom Stall Calculator</string>
+    <string name="QR_doors_label">ADA Access | Door Dimensions Reference</string>
+    <string name="QR_hallways_label">ADA Access | Hallway Dimensions Reference</string>
+    <string name="QR_ramps_label">ADA Access | Ramp Elevation Reference</string>
 
     <string name="app_info">       ADA Access, meant for use on Android platforms and created under
         the MIT License, is designed for storing and displaying architectural standards set in place
@@ -36,13 +36,153 @@
     <string name="contact_divider">--------------------------------------------</string>
     <string name="contact_welcome">Visit ABLE South Carolina\'s web site to read more about the company and its purpose!</string>
     <string name="ablesc_link"><a href="http://www.able-sc.org/">http://www.ABLE-SC.org</a></string>
-
-    <string name="calc_park_inst">Enter the total number of parking spots in the text box. Then, click calculate.
-        The number of accessible parking spots needed will be calculated according to the total number of parking spots.</string>
-    <string name="calculate">Calculate</string>
-    <string name="instructions">Instructions</string>
     <string name="testing">This text is only a test.</string>
-    <string name="wheelchair_test1"><b>Wheelchair Accessible Stall Information</b></string>
-    <string name="wheelchair_test2"><b>Ambulatory Accessible Stall Information</b></string>
+
+    <!-- Quick Reference Strings -->
+    <string name="default_line">Default string for place holding only.</string>
+
+    <!-- Doors Section -->
+    <string name="door_header_1">+  <b>Clearances for Swinging Doors</b></string>
+    <string name="door_header_2">+  <b>Clearances for Sliding Doors</b></string>
+    <string name="door_swinging_info">
+        \u2022 <b>Door openings</b> must provide a clear minimum width of <b>32 inches</b>.
+        \n \n
+        \u2022 Hinged doors must open 90 degrees.
+        \n \n
+        \u2022 <b>Thresholds</b> cannot be more than <b>one-half inch</b> high.
+        \n \n
+        <u>Maneuvering clearances for swinging doors</u>: \n
+        \u2022 Approach from front, pull: Minimum <b>60 inches</b> perpendicular to doorway and <b>18 inches</b> parallel to doorway.
+        \n \n
+        \u2022 Approach from front, push: Minimum <b>48 inches</b> perpendicular to doorway and <b>0 inches</b> parallel to doorway.
+        \n \n
+        \u2022 Approach from hinge side, pull: Minimum <b>60 inches</b> perpendicular to doorway and <b>36 inches</b> parallel to doorway.
+        \n \n
+        \u2022 Approach from hinge side, push: Minimum <b>42 inches</b> perpendicular to doorway and <b>22 inches</b> parallel to doorway.
+        \n \n
+        \u2022 Approach from latch/knob side, pull: Minimum <b>48 inches</b> perpendicular to doorway and <b>24 inches</b> parallel to doorway.
+        \n \n
+        \u2022 Approach from latch/knob side, push: Minimum <b>42 inches</b> perpendicular to doorway and <b>24 inches</b> parallel to doorway.
+        \n \n
+        \u2022 See <b>Section 404</b> for more detail and graphics.
+        \n \n
+    </string>
+    <string name="door_sliding_info">
+        \u2022 <b>Door openings</b> must provide a clear minimum width of <b>32 inches</b>.
+        \n \n
+        \u2022 Hinged doors must open 90 degrees.
+        \n \n
+        \u2022 <b>Thresholds</b> cannot be more than <b>one-half inch</b> high.
+        \n \n
+        <u>Maneuvering clearances for sliding/folding doors</u>: \n
+        \u2022 Approach from front:  Minimum <b>48 inches</b> perpendicular to doorway and <b>0 inches</b> parallel to doorway
+        \n \n
+        \u2022 Approach from side: Minimum <b>42 inches</b> perpendicular to doorway and <b>0 inches</b> parallel to doorway
+        \n \n
+        \u2022 Approach from hinge side: Minimum <b>42 inches</b> perpendicular to doorway and <b>22 inches</b> parallel to doorway
+        \n \n
+        \u2022 Approach from latch/knob side: Minimum <b>42 inches</b> perpendicular to doorway and <b>24 inches</b> parallel doorway
+        \n \n
+        \u2022 See <b>Section 404</b> for more detail and graphics.
+        \n \n
+    </string>
+
+    <!-- Bathroom Section -->
+    <string name="bathroom_header_1">+  <b>Wheelchair Accessible Stalls</b></string>
+    <string name="bathroom_header_2">+  <b>Ambulatory Accessible Stalls</b></string>
+    <string name="bathroom_info_1">
+        \u2022 Toilets must be positioned with a wall to the rear and to one side.
+        \n \n
+        \u2022 The center of the toilet must be <b>16 to 18 inches</b> from the side wall or partition.
+        \n \n
+        \u2022 Clearance must be <b>60 inches</b> minimum perpendicular from the side wall and <b>56 inches</b> minimum perpendicular from the rear wall for wall hung toilets or <b>59 inches</b> minimum for floor mounted toilets. For children, the stall should be <b>60 inches</b> wide and <b>59 inches</b> deep minimum.
+        \n \n
+        \u2022 Seat height must be <b>17 inches</b> minimum and <b>19 inches</b> maximum from the floor for adults.
+        \n \n
+        \u2022 The side wall grab bar must be <b>42 inches</b> long minimum and be placed a maximum of <b>12 inches</b> from the rear wall.
+        \n \n
+        \u2022 The rear wall grab bar must be <b>36 inches</b> long minimum and extend from the center of the toilet <b>12 inches</b> minimum on one side and <b>24 inches</b> on the other.
+        \n \n
+        \u2022 Doors can only be in the front or side partition of the stall. They must open outward, be <b>32 or 36 inches</b> wide, be self-closing and a maximum of <b>4 inches</b> from the side wall or partition farthest from the toilet.
+        \n \n
+    </string>
+    <string name="bathroom_info_2">
+        \u2022 Ambulatory stalls are for people who walk with the assistance of canes or crutches.
+        \n \n
+        \u2022 Center of the toilet must be <b>17 to 19 inches</b> from the side wall or partition.
+        \n \n
+        \u2022 Seat height must be <b>11 inches</b> minimum and <b>17 inches</b> maximum from the floor.
+        \n \n
+        \u2022 Toilets must be positioned with a wall to the rear and on each side.
+        \n \n
+        \u2022 Stall must have a depth of <b>60 inches</b> minimum (from the back wall to the partition/door) and width of <b>35 inches</b> minimum and <b>37 inches</b> maximum.
+        \n \n
+        \u2022 Grab bars on each side of the stall. Each bar should measure <b>42 inches</b> long minimum and be located a maximum of <b>12 inches</b> from the rear wall.
+        \n \n
+        \u2022 Doors must swing outward, be self-closing, and have a <b>32 inch</b> door.
+    </string>
+
+    <!-- Hallways Section-->
+    <string name="hallway_header_1">+  <b>Hallways and Accessible Routes</b></string>
+    <string name="hallway_info_1">
+        \u2022 The width of walking surfaces must be <b>36 inches</b> wide, minimum, and clear of obstructions.
+        \n \n
+        \u2022 At turns of 180 degrees around an element that is less than <b>48 inches</b> wide, the clear width must be <b>42 inches</b> minimum approaching the turn, <b>48 inches</b> minimum at the turn and <b>42 inches</b> minimum leaving the turn.
+        \n \n
+        \u2022 Accessible routes with clear width of less than <b>60 inches</b>, passing spaces must be provided at intervals of <b>200 feet</b> maximum. Passing spaces must either be a space <b>60 inches</b> minimum by <b>60 inches</b> minimum, or an intersection of two walking surfaces providing a T-shaped space where the arms extend <b>48 inches</b> minimum beyond the intersection.
+        \n \n
+    </string>
+
+    <!-- Ramps Section -->
+    <string name="ramp_header_1">+  <b>Ramps</b></string>
+    <string name="ramp_header_2">+  <b>Landings</b></string>
+    <string name="ramp_info_1">
+        \u2022 The maximum steepness of a slope is <b>1:12</b>.
+        \n \n
+        \u2022 Ramps should have the least possible running slope and, when possible, accompany them with stairs.
+        \n \n
+        \u2022 Cross slope of ramp runs shall not be steeper than <b>1:48</b>.
+        \n \n
+        \u2022 Clear width of a ramp run and, where handrails are provided, the clear width between handrails must be <b>36 inches</b> minimum.
+        \n \n
+        \u2022 The rise for any ramp run shall only be <b>30 inches</b> maximum.
+        \n \n
+    </string>
+    <string name="ramp_info_2">
+        \u2022 Ramps must have landings at the top and bottom of each ramp run.
+        \n \n
+        \u2022 <b>Circular</b> landing spaces must have a minimum turning space of <b>60 inches</b> in diameter.
+        \n \n
+        \u2022 <b>T-shaped</b> turning spaces must exist within square of <b>60 inches</b> by <b>60 inches</b> minimum size. The arms and base of the T must be a minimum of <b>36 inches</b> wide. Each arm must be clear of obstructions for a minimum distance of <b>12 inches</b> in each direction and the base should be clear of obstructions for a minimum distance of <b>24 inches</b>.
+        \n \n
+    </string>
+
+    <!-- Parking Section -->
+    <string name="parking_header_1"><b>Total Number of Parking Spaces</b>:</string>
+    <string name="parking_header_2">+  <b>Calculator Instructions</b></string>
+    <string name="parking_header_3">+  <b>Additional Information</b></string>
+
+    <string name="calculate">Calculate</string>
+    <string name="calc_park_inst">
+        Enter the total number of parking spots in the text box. Then, click calculate.
+        The calculator computes the minimum number of accessible parking spaces needed based on the total number of parking spaces provided in the parking lot or parking structure.
+    </string>
+    <string name="parking_info_1">
+        \u2022 Car parking spaces must be at least <b>96 inches</b> wide and van parking spaces must be at least <b>132 inches</b> wide, each must be marked to define the width, and each must have an adjacent access aisle.
+        \n \n
+        \u2022 The length of accessible parking spaces is the same as standard parking spaces, which the standard DOT recommendation is <b>228 inches</b>.
+        \n \n
+        \u2022 Access aisles must be at least <b>60 inches</b> wide, the same length as the parking space, and marked to discourage parking in them.
+        \n \n
+        \u2022 For hospital outpatient facilities, <b>ten percent</b> of patient and visitor parking spaces provided must be accessible parking spaces.
+        \n \n
+        \u2022 For rehabilitation facilities and outpatient physical therapy facilities, <b>twenty percent</b> of patient and visitor parking spaces must be accessible parking spaces.
+        \n \n
+        \u2022 In general, accessible parking spaces must be located on the shortest accessible route from parking to the entrance of the particular building or facility they serve.
+        \n \n
+        \u2022 For residential facilities, accessible parking spaces must be located on the shortest accessible route to the dwelling unit entrance they serve and should be dispersed throughout all types of parking provided for the residential dwelling units.
+        \n \n
+    </string>
+
 
 </resources>

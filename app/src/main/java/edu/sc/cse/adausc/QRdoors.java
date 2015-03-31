@@ -43,27 +43,7 @@ public class QRdoors extends Activity{
                 ? View.GONE
                 : View.VISIBLE);
 
-        content1.setText("Door openings must provide a clear minimum width of 32 inches. \n" +
-                "\n" +
-                "Hinged doors must open 90 degrees. \n" +
-                "\n" +
-                "Thresholds cannot be more than ½ inch high. \n" +
-                "\n" +
-                "Maneuvering clearances for swinging doors: \n" +
-                "\n" +
-                "Approach from front, pull: Minimum 60 inches perpendicular to doorway and 18 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from front, push: Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from hinge side, pull: Minimum 60 inches perpendicular to doorway and 36 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from hinge side, push: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from latch/knob side, pull: Minimum 48 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from latch/knob side, push: Minimum 42 inches perpendicular to doorway and 24 inches parallel to doorway\n" +
-                "\n" +
-                "See Section 404 for more detail and graphics.\n");
+        content1.setText(R.string.door_swinging_info);
     }
 
     public void toggle_contents2(View view2) {
@@ -71,22 +51,6 @@ public class QRdoors extends Activity{
                 ? View.GONE
                 : View.VISIBLE);
 
-        content2.setText("Door openings must provide a clear minimum width of 32 inches. \n" +
-                "\n" +
-                "Hinged doors must open 90 degrees. \n" +
-                "\n" +
-                "Thresholds cannot be more than ½ inch high. \n" +
-                "\n" +
-                "Maneuvering clearances for sliding/folding doors:\n" +
-                "\n" +
-                "Approach from front:  Minimum 48 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from side: Minimum 42 inches perpendicular to doorway and 0 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from hinge side: Minimum 42 inches perpendicular to doorway and 22 inches parallel to doorway\n" +
-                "\n" +
-                "Approach from latch/knob side: Minimum 42 inches perpendicular to doorway and 24 inches parallel doorway\n" +
-                "\n" +
-                "See Section 404 for more detail and graphics.\n");
+        content2.setText(R.string.door_sliding_info);
     }
 }
