@@ -14,6 +14,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -43,6 +44,7 @@ public class SerializationHelper {
                 ex.printStackTrace();
             }
         }
+        Collections.sort(oFavList);
 
         return oFavList;
     }
@@ -103,6 +105,7 @@ public class SerializationHelper {
 
     public static ArrayList<ArrayList<String>> DeserializeMetadata(Context oContext) {
         ArrayList<ArrayList<String>> oParentChildList = new ArrayList<ArrayList<String>>();
+        HashMap<String, String> oFullList = new HashMap<String, String>();
         for(int i = 0; i < 9; i++){
             oParentChildList.add(new ArrayList<String>());
         }
@@ -114,9 +117,11 @@ public class SerializationHelper {
             while ((line = bufferedReader.readLine()) != null) {
                 int oSection = Integer.parseInt(line.substring(0, 1));
                 oParentChildList.get(oSection - 1).add(line);
+                oFullList.put(line.substring(0, line.indexOf(' ')), line.substring(line.indexOf(' ')+1, line.length()));
             }
             oReader.close();
             bufferedReader.close();
+            SessionCache.m_oMetaData = oFullList;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -133,6 +138,8 @@ public class SerializationHelper {
             if(!SessionCache.m_oFavorites.contains(sSection)) {
                 SessionCache.m_oFavorites.add(sSection);
             }
+            //re-sort
+            Collections.sort(SessionCache.m_oFavorites);
             return true;
         } catch (Exception e){
             e.printStackTrace();

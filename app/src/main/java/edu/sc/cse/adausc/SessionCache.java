@@ -40,4 +40,6 @@ public class SessionCache {
     public static String m_oFullDocHTM;
     public static HashMap<String, String> m_oSectionDiagrams;
     public static boolean m_bInitialized = false;
+    public static boolean m_bFavsDirty = false;
+    public static HashMap<String, String> m_oMetaData;
 }
