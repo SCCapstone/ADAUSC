@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.webkit.WebView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -20,7 +19,7 @@ public class SectionScreen extends Activity {
         oContent = (WebView) findViewById(R.id.sectionContent);
         oCode = (TextView) findViewById(R.id.sectionCode);
         oIsFav = (CheckBox) findViewById(R.id.isFavChkBox);
-        oDiagram = (ImageView) findViewById(R.id.sectionDiagram);
+        oDiagram = (WebView) findViewById(R.id.sectionDiagram);
         //deserialize current section .ada file
         oSection = SerializationHelper.Deserialize(SessionCache.m_oCurrentStandard);
         oIsFav.setChecked(SessionCache.IsFavorite(oSection.getCode()));
@@ -43,7 +42,9 @@ public class SectionScreen extends Activity {
         String oParentSection = oSection.getCode().substring(0, oSection.getCode().indexOf('.'));
         if(SessionCache.m_oSectionDiagrams.containsKey(oParentSection)){
             String diagramNumber = SessionCache.m_oSectionDiagrams.get(oSection.getCode().substring(0, oSection.getCode().indexOf('.')));
-            oDiagram.setImageBitmap(SerializationHelper.GetDiagramBitmap(diagramNumber));
+            //oDiagram.setImageBitmap(SerializationHelper.GetDiagramBitmap(diagramNumber));
+            oDiagram.loadDataWithBaseURL("file:///android_asset/","<html><body><img src=" + "\"ADAGIFs/diagram"+diagramNumber+".gif\"" + "</body></html>","text/html", "utf-8", null);
+            oDiagram.getSettings().setBuiltInZoomControls(true);
         }
 
         //enable return to home from action bar
@@ -56,6 +57,6 @@ public class SectionScreen extends Activity {
     WebView oContent;
     TextView oCode;
     CheckBox oIsFav;
-    ImageView oDiagram;
+    WebView oDiagram;
     int m_iFontSize = 6;
 }
