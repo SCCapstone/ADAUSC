@@ -1,0 +1,354 @@
+104.1 Dimensions Dimensions stated maximum minimum absolute.
+104.3 Figures Unless specifically stated otherwise figures provided informational purposes only.
+106.1 General For purpose document terms defined 106.5 indicated meaning.
+201.3 Temporary and Permanent Structures. These requirements shall apply temporary permanent buildings facilities.
+202.1 General. Additions alterations existing buildings facilities shall comply 202.
+202.5 Alterations to Qualified Historic Buildings and Facilities. Alterations qualified historic building facility shall comply 202.3 202.4.
+203.1 General Sites buildings facilities elements exempt requirements extent specified 203.
+203.11 Water Slides Water slides shall required comply requirements an accessible route.
+203.12 Animal Containment Areas Animal containment areas public shall required comply requirements an accessible route.
+204.1 General Protruding objects circulation paths shall comply 307.
+206.1 General Accessible routes shall provided accordance 206 shall comply Chapter 4.
+206.2 Where Required Accessible routes shall provided required 206.2.
+206.2.1 Site Arrival Points At least accessible route shall provided within site accessible parking spaces accessible passenger loading zones; public streets sidewalks; public transportation stops accessible building facility entrance serve.
+206.2.3 Multi-Story Buildings and Facilities. At least accessible route shall connect story mezzanine multi-story buildings facilities.
+206.2.5 Restaurants and Cafeterias. In restaurants cafeterias an accessible route shall provided dining areas including raised sunken dining areas outdoor dining areas.
+206.2.7 Press Boxes. Press boxes assembly areas shall an accessible route.
+206.2.8 Employee Work Areas Common circulation paths within employee areas shall comply 402.
+206.2.12 Court Sports. In court sports least accessible route shall directly connect both sides court.
+206.2.13 Exercise Machines and Equipment Exercise machines equipment required comply 236 shall an accessible route.
+206.4 Entrances Entrances shall provided accordance 206.4.  Entrance doors doorways gates shall comply 404 shall an accessible route complying 402.
+206.4.5 Tenant Spaces At least accessible entrance tenancy facility shall comply 404.
+206.5 Doors, Doorways, and Gates Doors doorways gates providing user passage shall provided accordance 206.5.
+206.7.2 Wheelchair Spaces. Platform lifts shall permitted provide an accessible route comply wheelchair space dispersion line-of-sight requirements 221 <a href="#sec802">802</a>.
+206.7.3 Incidental Spaces Platform lifts shall permitted provide an accessible route incidental spaces public spaces occupied five persons maximum.
+206.7.5 Existing Site Constraints Platform lifts shall permitted existing exterior site constraints ramp elevator infeasible.
+206.7.7 Amusement Rides. Platform lifts shall permitted provide accessible routes load unload areas serving amusement rides.
+208.1 General Where parking spaces provided parking spaces shall provided accordance 208.
+208.2.1 Hospital Outpatient Facilities Ten percent patient visitor parking spaces provided serve hospital outpatient facilities shall comply 502.
+208.2.3 Residential Facilities. Parking spaces provided serve residential facilities shall comply 208.2.3.
+208.3 Location Parking facilities shall comply 208.3
+209.1 General. Passenger loading zones shall provided accordance 209.
+209.2 Type. Where provided passenger loading zones shall comply 209.2.
+209.2.3 On-Street Bus Stops. On-street bus stops shall comply 810.2 maximum extent practicable.
+209.3 Medical Care and Long-Term Care Facilities At least passenger loading zone complying 503 shall provided an accessible entrance licensed medical care licensed long-term care facilities period stay exceeds twenty-four hours.
+210.1 General Interior exterior stairs means egress shall comply 504.
+212.1 General. Where provided kitchens kitchenettes sinks shall comply 212.
+212.2 Kitchens and Kitchenettes. Kitchens kitchenettes shall comply 804.
+213.2.1 Unisex (Single-Use or Family) Toilet and Unisex Bathing Rooms. Unisex toilet rooms shall contain lavatory water closets urinals water closet urinal.  Unisex bathing rooms shall contain shower shower bathtub lavatory water closet.  Doors unisex toilet rooms unisex bathing rooms shall privacy latches.
+213.3.2 Water Closets. Where water closets provided least shall comply 604.
+213.3.3 Urinals. Where urinal is provided least shall comply 605.
+213.3.4 Lavatories. Where lavatories provided least shall comply 606 shall located toilet compartment.
+213.3.5 Mirrors. Where mirrors provided least shall comply 603.3.
+213.3.6 Bathing Facilities. Where bathtubs showers provided least bathtub complying 607 least shower complying 608 shall provided.
+214.1 General. Where provided washing machines clothes dryers shall comply 214.
+215.1 General. Where fire alarm systems provide audible alarm coverage alarms shall comply 215.
+215.2 Public and Common Use Areas Alarms public areas common areas shall comply 702.
+215.4 Transient Lodging Guest rooms required comply 224.4 shall provide alarms complying 702.
+215.5 Residential Facilities Where provided residential dwelling units required comply 809.5 alarms shall comply 702.
+216.1 General. Signs shall provided accordance 216 shall comply 703.
+216.4 Means of Egress Signs means egress shall comply 216.4.
+216.5 Parking Parking spaces complying 502 shall identified signs complying 502.6.
+216.9 TTYs. Identification directional signs public TTYs shall provided accordance 216.9.
+216.9.1 Identification Signs Public TTYs shall identified International Symbol TTY complying 703.7.2.2.
+217.3 Volume Controls All public telephones shall volume controls complying 704.3.
+217.4 TTYs. TTYs complying 704.4 shall provided accordance 217.4.
+217.4.1 Bank Requirement. Where four public pay telephones provided bank telephones least public TTY complying 704.4 shall provided bank.
+218.1 General. Transportation facilities shall comply 218.
+218.2 New and Altered Fixed Guideway Stations New altered stations rapid rail light rail commuter rail intercity rail speed rail fixed guideway systems shall comply 810.5 810.10.
+218.4 Bus Shelters. Where provided bus shelters shall comply 810.3.
+218.5 Other Transportation Facilities In transportation facilities public address systems shall comply 810.7 clocks shall comply 810.8.
+219.1 General Assistive listening systems shall provided accordance 219 shall comply 706.
+219.2 Required Systems In assembly area audible communication is integral space an assistive listening shall provided.
+221.1 General Assembly areas shall provide wheelchair spaces companion seats designated aisle seats complying <a href="#sec221">221</a> <a href="#sec802">802</a>.  In addition lawn seating shall comply 221.5. <strong>[See additional requirements <a href="#assemblyareas">28 CFR 35.151(g)</a> <a href="#406f">28 CFR 36.406(f)</a>.]</strong>
+221.2 Wheelchair Spaces Wheelchair spaces complying 221.2 shall provided assembly areas fixed seating.
+221.2.1 Number and Location Wheelchair spaces shall provided complying 221.2.1.
+221.2.1.1 General Seating. Wheelchair spaces complying 802.1 shall provided accordance Table 221.2.1.1.
+221.2.2 Integration Wheelchair spaces shall an integral seating plan.
+224.1 General. Transient lodging facilities shall provide guest rooms accordance <a href="#sec224">224</a>. <strong>[See additional requirements places lodging  <a href="#406c">28 CFR 36.406(c)</a> housing education <a href="#housingeducation">28 CFR 35.151(f)</a> <a href="#406e">28 CFR 36.406(e)</a>.]</strong>
+225.1 General. Storage facilities shall comply 225.
+225.2 Storage. Where storage is provided accessible spaces least type shall comply 811.
+225.2.1 Lockers Where lockers provided least 5 percent fewer type shall comply 811.
+225.2.2 Self-Service Shelving. Self-service shelves shall located an accessible route complying 402.  Self-service shelving shall required comply 308.
+227.1 General Where provided check-out aisles sales counters service counters food service lines queues waiting lines shall comply 227 904.
+227.4 Food Service Lines Food service lines shall comply 904.5.  Where self-service shelves provided least 50 percent fewer type provided shall comply 308.
+227.5 Queues and Waiting Lines Queues waiting lines servicing counters check-out aisles required comply 904.3 904.4 shall comply 403.
+231.1 General. Judicial facilities shall comply 231.
+231.2 Courtrooms. Each courtroom shall comply 808.
+231.3 Holding Cells. Where provided central holding cells court-floor holding cells shall comply 231.3.
+231.4 Visiting Areas Visiting areas shall comply 231.4.
+232.2 General Holding Cells and General Housing Cells General holding cells general housing cells shall provided accordance 232.2.
+232.2.1.1 Beds In cells having 25 beds least 5 percent beds shall clear floor space complying 807.2.3.
+232.5 Visiting Areas Visiting areas shall comply 232.5.
+233.1 General. Facilities residential dwelling units shall comply 233. <strong>[See additional requirements <a href="#socialservice">28 CFR 35.151(e)</a> <a href="#housingeducation">28 CFR 35.151(f)</a> <a href="#406d">28 CFR 36.406(d)</a> <a href="#406e">28 CFR 36.406(e)</a>.]</strong>
+233.3.4 Alterations. Alterations shall comply 233.3.4.
+234.1 General Amusement rides shall comply 234.
+234.2 Load and Unload Areas. Load unload areas serving amusement rides shall comply 1002.3.
+234.4 Existing Amusement Rides Where existing amusement rides altered alteration shall comply 234.4.
+235.1 General. Recreational boating facilities shall comply 235.
+236.1 General At least type exercise machine equipment shall comply 1004.
+237.1 General Fishing piers platforms shall comply 1005.
+238.1 General Golf facilities shall comply 238.
+238.2 Golf Courses Golf courses shall comply 238.2.
+238.2.2 Putting Greens. Putting greens shall designed constructed golf car enter exit putting green.
+239.1 General Miniature golf facilities shall comply 239.
+239.2 Minimum Number At least 50 percent holes miniature golf courses shall comply 1007.3.
+240.2 Play Components Where provided components shall comply 240.2.
+241 General Where provided saunas steam rooms shall comply 612.
+242.1 General Swimming pools wading pools spas shall comply 242.
+302.1 General Floor ground surfaces shall stable firm slip resistant shall comply 302.
+303.1 General Where changes level permitted floor ground surfaces shall comply 303.
+304.1 General. Turning space shall comply 304.
+304.2 Floor or Ground Surfaces Floor ground surfaces turning space shall comply 302. Changes level permitted.
+304.3 Size. Turning space shall comply 304.3.1 304.3.2.
+304.4 Door Swing Doors shall permitted swing turning spaces.
+305.1 General Clear floor ground space shall comply 305.
+305.2 Floor or Ground Surfaces Floor ground surfaces clear floor ground space shall comply 302. Changes level permitted.
+305.3 Size. The clear floor ground space shall 30 inches (760 mm) minimum 48 inches (1220 mm) minimum.
+305.4 Knee and Toe Clearance Unless otherwise specified clear floor ground space shall permitted include knee toe clearance complying 306.
+305.6 Approach. One full unobstructed side clear floor ground space shall adjoin an accessible route adjoin clear floor ground space.
+306.2.2 Maximum Depth Toe clearance shall extend 25 inches (635 mm) maximum under an element.
+307.1 General. Protruding objects shall comply 307.
+307.5 Required Clear Width Protruding objects shall reduce clear width required accessible routes.
+308.1 General Reach ranges shall comply 308.
+309.1 General Operable parts shall comply 309.
+309.2 Clear Floor Space A clear floor ground space complying 305 shall provided.
+309.3 Height Operable parts shall placed within reach ranges specified 308.
+402.1 General Accessible routes shall comply 402.
+402.2 Components Accessible routes shall consist following components: walking surfaces running slope steeper 1:20 doorways ramps curb ramps excluding flared sides elevators platform lifts.  All components an accessible route shall comply applicable requirements Chapter 4.
+403.2 Floor or Ground Surface Floor ground surfaces shall comply 302.
+403.3 Slope The running slope walking surfaces shall steeper 1:20.  The cross slope walking surfaces shall steeper 1:48.
+403.4 Changes in Level Changes level shall comply 303.
+403.5 Clearances Walking surfaces shall provide clearances complying 403.5.
+403.6 Handrails Where handrails provided along walking surfaces running slopes steeper 1:20 shall comply 505.
+404.1 General Doors doorways gates an accessible route shall comply 404.
+404.2.4.4 Floor or Ground Surface Floor ground surface within required maneuvering clearances shall comply 302. Changes level permitted.
+404.2.8 Closing Speed. Door gate closing speed shall comply 404.2.8.
+404.3.3 Thresholds Thresholds changes level doorways shall comply 404.2.5.
+404.3.4 Doors in Series and Gates in Series Doors series gates series shall comply 404.2.6.
+405.1 General. Ramps accessible routes shall comply 405.
+405.2 Slope. Ramp runs shall running slope steeper 1:12.
+405.3 Cross Slope Cross slope ramp runs shall steeper 1:48.
+405.4 Floor or Ground Surfaces Floor ground surfaces ramp runs shall comply 302. Changes level running slope cross slope permitted ramp runs.
+405.5 Clear Width The clear width ramp handrails provided clear width handrails shall 36 inches (915 mm) minimum.
+405.6 Rise The rise ramp shall 30 inches (760 mm) maximum.
+405.7 Landings Ramps shall landings top bottom ramp run.  Landings shall comply 405.7.
+405.7.1 Slope Landings shall comply 302. Changes level permitted.
+405.7.2 Width The landing clear width shall least wide widest ramp leading landing.
+405.7.3 Length The landing clear length shall 60 inches (1525 mm) long minimum.
+405.7.5 Doorways. Where doorways located adjacent ramp landing maneuvering clearances required 404.2.4 404.3.2 shall permitted overlap required landing area.
+405.8 Handrails Ramp runs rise greater 6 inches (150 mm) shall handrails complying 505.
+405.10 Wet Conditions Landings subject wet conditions shall designed prevent accumulation water.
+406.1 General. Curb ramps accessible routes shall comply 406 405.2 405.5 405.10.
+406.3 Sides of Curb Ramps. Where provided curb ramp flares shall steeper 1:10.
+407.2 Elevator Landing Requirements Elevator landings shall comply 407.2.
+407.2.1 Call Controls. Where elevator buttons keypads provided shall comply 407.2.1 309.4.  Call buttons shall raised flush.
+407.2.1.1 Height. Call buttons keypads shall located within reach ranges specified 308 measured centerline highest operable part.
+407.2.1.2 Size Call buttons shall  3/4 inch (19 mm) minimum smallest dimension.
+407.2.1.3 Clear Floor or Ground Space. A clear floor ground space complying 305 shall provided controls.
+407.2.2 Hall Signals Hall signals including in-car signals shall comply 407.2.2.
+407.2.2.4 Differentiation Each destination-oriented elevator bank elevators shall audible visible means differentiation.
+407.2.3 Hoistway Signs. Signs elevator hoistways shall comply 407.2.3.
+407.3 Elevator Door Requirements. Hoistway car doors shall comply 407.3.
+407.3.1 Type Elevator doors shall horizontal sliding type.  Car gates shall prohibited.
+407.3.2 Operation Elevator hoistway car doors shall open close automatically.
+407.3.3.3 Duration Door reopening devices shall remain effective 20 seconds minimum.
+407.3.5 Door Dela .  Elevator doors shall remain fully open response car 3 seconds minimum.
+407.3.6 Width The width elevator doors shall comply Table 407.4.1.
+407.4 Elevator Car Requirements Elevator cars shall comply 407.4.
+407.4.1 Car Dimensions Inside dimensions elevator cars clear width elevator doors shall comply Table 407.4.1.
+407.4.2 Floor Surfaces Floor surfaces elevator cars shall comply 302 303.
+407.4.6 Elevator Car Controls Where provided elevator car controls shall comply 407.4.6 309.4.
+407.4.6.1 Location Controls shall located within reach ranges specified 308.
+407.4.6.2 Button .  Car control buttons floor designations shall comply 407.4.6.2 shall raised flush.
+407.4.6.2.1 Size Buttons shall 3/4 inch (19 mm) minimum smallest dimension.
+407.4.6.3 Keypads Car control keypads shall standard telephone keypad arrangement shall comply 407.4.7.2.
+407.4.6.4 Emergency Controls. Emergency controls shall comply 407.4.6.4.
+407.4.6.4.1 Height Emergency control buttons shall centerlines 35 inches (890 mm) minimum above finish floor.
+407.4.6.4.2 Location Emergency controls including emergency alarm shall grouped bottom panel.
+407.4.7 Designations and Indicators of Car Controls Designations indicators car controls shall comply 407.4.7.
+407.4.7.1 Buttons Car control buttons shall comply 407.4.7.1.
+407.4.7.1.1 Type. Control buttons shall identified tactile characters complying 703.2.
+407.4.8 Car Position Indicators. Audible visible car position indicators shall provided elevator cars.
+407.4.8.1 Visible Indicators. Visible indicators shall comply 407.4.8.1.
+407.4.8.1.1 Size Characters shall  1/2 inch (13 mm) minimum.
+407.4.8.1.2 Location Indicators shall located above car control panel above door.
+407.4.8.2 Audible Indicators Audible indicators shall comply 407.4.8.2.
+407.4.8.2.3 Frequency. The verbal annunciator shall frequency 300 Hz minimum 3000 Hz maximum.
+408.2 Elevator Landings Landings serving limited-use/limited-application elevators shall comply 408.2.
+408.2.1 Call Buttons Elevator buttons keypads shall comply 407.2.1.
+408.2.2 Hall Signals Hall signals shall comply 407.2.2.
+408.2.3 Hoistway Signs Signs elevator hoistways shall comply 407.2.3.1.
+408.3 Elevator Doors. Elevator hoistway doors shall comply 408.3.
+408.3.1 Sliding Doors. Sliding hoistway car doors shall comply 407.3.1 407.3.3 408.4.1.
+408.3.2.1 Power Operation. Swinging doors shall power-operated shall comply ANSI/BHMA A156.19 (1997 2002 edition) (incorporated reference Referenced Standards Chapter 1).
+408.3.2.2 Duration Power-operated swinging doors shall remain open 20 seconds minimum activated.
+408.4 Elevator Cars Elevator cars shall comply 408.4.
+408.4.2 Floor Surfaces Floor surfaces elevator cars shall comply 302 303.
+408.4.3 Platform to Hoistway Clearance The platform hoistway clearance shall comply 407.4.3.
+408.4.4 Leveling. Elevator car leveling shall comply 407.4.4.
+408.4.5 Illumination. Elevator car illumination shall comply 407.4.5.
+408.4.6 Car Controls Elevator car controls shall comply 407.4.6.  Control panels shall centered side wall.
+408.4.7 Designations and Indicators of Car Controls Designations indicators car controls shall comply 407.4.7.
+408.4.8 Emergency Communications. Car emergency signaling devices complying 407.4.9 shall provided.
+409.2 Call Buttons Call buttons shall  3/4 inch (19 mm) minimum smallest dimension shall comply 309.
+409.3 Elevator Doors Hoistway doors car doors car gates shall comply 409.3 404.
+409.4 Elevator Cars Private residence elevator cars shall comply 409.4.
+409.4.2 Floor Surfaces. Floor surfaces elevator cars shall comply 302 303.
+409.4.5 Illumination Levels. Elevator car illumination shall comply 407.4.5.
+409.4.6 Car Controls Elevator car control buttons shall comply 409.4.6 309.3 309.4 shall raised flush.
+409.4.6.1 Size. Control buttons shall 3/4 inch (19 mm) minimum smallest dimension.
+409.4.6.2 Location Control panels shall side wall 12 inches (305 mm) minimum adjacent wall.
+409.4.7 Emergency Communications Emergency two-way communication systems shall comply 409.4.7.
+409.4.7.1 Type. A telephone emergency signal device shall provided car.
+409.4.7.2 Operable Parts. The  telephone emergency signaling device shall comply 309.3 309.4.
+409.4.7.4 Cord. The telephone cord shall 29 inches (735 mm) long minimum.
+410.2 Floor Surfaces Floor surfaces platform lifts shall comply 302 303.
+410.3 Clear Floor Space Clear floor space platform lifts shall comply 305.
+410.5 Operable Parts Controls platform lifts shall comply 309.
+502.3 Access Aisle Access aisles serving parking spaces shall comply 502.3.  Access aisles shall adjoin an accessible route.  Two parking spaces shall permitted share common access aisle.
+502.3.1 Width. Access aisles serving car van parking spaces shall 60 inches (1525 mm) wide minimum.
+502.3.2 Length Access aisles shall extend full length parking spaces serve.
+502.3.3 Marking Access aisles shall marked discourage parking them.
+503.1 General Passenger loading zones shall comply 503.
+503.3.1 Width. Access aisles serving vehicle pull-up spaces shall 60 inches (1525 mm) wide minimum.
+503.3.2 Length Access aisles shall extend full length vehicle pull-up spaces serve.
+504.1 General Stairs shall comply 504.
+504.3 Open Risers Open risers permitted.
+504.4 Tread Surface Stair treads shall comply 302. Changes level permitted.
+504.6 Handrails Stairs shall handrails complying 505.
+505.1 General Handrails provided along walking surfaces complying 403 required ramps complying 405 required stairs complying 504 shall comply 505.
+505.2 Where Required Handrails shall provided both sides stairs ramps.
+505.7 Cross Section Handrail gripping surfaces shall cross section complying 505.7.1 505.7.2.
+505.9 Fittings Handrails shall rotate within fittings.
+602.1 General Drinking fountains shall comply 307 602.
+602.2 Clear Floor Space Units shall clear floor ground space complying 305 positioned forward approach centered unit. Knee toe clearance complying 306 shall provided.
+602.3 Operable Parts Operable parts shall comply 309.
+602.4 Spout Height Spout outlets shall 36 inches (915 mm) maximum above finish floor ground.
+603.1 General Toilet bathing rooms shall comply 603.
+603.2 Clearances Clearances shall comply 603.2.
+603.2.1 Turning Space Turning space complying 304 shall provided within room.
+603.2.2 Overlap Required clear floor spaces clearance fixtures turning space shall permitted overlap.
+604.1 Genera .  Water closets toilet compartments shall comply 604.2 604.8.
+604.3 Clearance Clearances around water closets toilet compartments shall comply 604.3.
+604.3.2 Overlap. The required clearance around water closet shall permitted overlap water closet associated grab bars dispensers sanitary napkin disposal units coat hooks shelves accessible routes clear floor space clearances required fixtures turning space.  No fixtures obstructions shall located within required water closet clearance.
+604.8.1 Wheelchair Accessible Compartments. Wheelchair accessible compartments shall comply 604.8.1.
+604.8.1.3 Approach Compartments shall arranged left-hand right-hand approach water closet.
+604.8.2 Ambulatory Accessible Compartments. Ambulatory accessible compartments shall comply 604.8.2.
+604.9 Water Closets and Toilet Compartments for Children's Use. Water closets toilet compartments children's shall comply 604.9.
+604.9.2 Clearance Clearance around water closet shall comply 604.3.
+604.9.4 Grab Bars Grab bars water closets shall comply 604.5.
+604.9.7 Toilet Compartments Toilet compartments shall comply 604.8.
+605.1 General Urinals shall comply 605.
+605.3 Clear Floor Space. A clear floor ground space complying 305 positioned forward approach shall provided.
+605.4 Flush Controls Flush controls shall operated automatic.  Hand operated flush controls shall comply 309.
+606.1 General. Lavatories sinks shall comply 606.
+606.2 Clear Floor Space. A clear floor space complying 305 positioned forward approach knee toe clearance complying 306 shall provided.
+607.1 General Bathtubs shall comply 607.
+607.3 Seat A permanent seat head end bathtub removable in-tub seat shall provided.  Seats shall comply 610.
+607.4 Grab Bars. Grab bars bathtubs shall comply 609 shall provided accordance 607.4.1 607.4.2.
+607.4.2 Bathtubs Without Permanent Seats For bathtubs permanent seats grab bars shall comply 607.4.2.
+608.1 General Shower compartments shall comply 608.
+608.2 Size and Clearances for Shower Compartments Shower compartments shall sizes clearances complying 608.2.
+608.5 Controls Controls faucets shower spray units shall comply 309.4.
+608.8 Shower Enclosures Enclosures shower compartments shall obstruct controls faucets shower spray units obstruct transfer wheelchairs onto shower seats.
+609.1 General Grab bars toilet facilities bathing facilities shall comply 609.
+609.2 Cross Section. Grab bars shall cross section complying 609.2.1 609.2.2.
+609.6 Fittings Grab bars shall rotate within fittings.
+610.1 General Seats bathtubs shower compartments shall comply 610.
+611.1 General. Washing machines clothes dryers shall comply 611.
+611.3 Operable Parts Operable parts including doors lint screens detergent bleach compartments shall comply 309.
+612.1 General Saunas steam rooms shall comply 612.
+612.3 Turning Space A turning space complying 304 shall provided within saunas steam rooms.
+703.2.1 Depth Raised characters shall 1/32 inch (0.8 mm) minimum above background.
+703.2.2 Case Characters shall uppercase.
+703.3 Braille Braille shall contracted (Grade 2) shall comply 703.3 703.4.
+703.4 Installation Height and Location. Signs tactile characters shall comply 703.4.
+703.5 Visual Characters Visual characters shall comply 703.5.
+703.5.2 Case Characters shall uppercase lowercase combination both.
+703.6 Pictograms. Pictograms shall comply 703.6.
+703.7 Symbols of Accessibility Symbols accessibility shall comply 703.7.
+703.7.2.2 International Symbol of TTY. The International Symbol TTY shall comply Figure 703.7.2.2.
+704.1 General Public telephones shall comply 704.
+704.2 Wheelchair Accessible Telephones. Wheelchair accessible telephones shall comply 704.2.
+704.2.2 Operable Parts Operable parts shall comply 309. Telephones shall push-button controls service is available.
+704.2.3 Telephone Directories Telephone directories provided shall located accordance 309.
+704.2.4 Cord Length The cord telephone handset shall 29 inches (735 mm) long minimum.
+704.4.1 Height When touch surface TTY keypads shall 34 inches (865 mm) minimum above finish floor.
+705.1 General Detectable warnings shall consist surface truncated domes shall comply 705.
+705.1.3 Contrast Detectable warning surfaces shall contrast visually adjacent walking surfaces either light-on-dark dark-on-light.
+705.2 Platform Edges Detectable warning surfaces platform boarding edges shall 24 inches (610 mm) wide shall extend full length public areas platform.
+706.1 General. Assistive listening systems required assembly areas shall comply 706.
+706.6 Peak Clipping Level Peak clipping shall exceed 18 dB clipping relative peaks speech.
+707.1 General Automatic teller machines fare machines shall comply 707.
+707.2 Clear Floor or Ground Space. A clear floor ground space complying 305 shall provided.
+707.6 Input. Input devices shall comply 707.6.
+707.6.3 Function Keys Function keys shall comply 707.6.3.
+707.7 Display Screen. The display screen shall comply 707.7.
+708.1 General. Two-way communication systems shall comply 708.
+708.2 Audible and Visual Indicators. The shall provide both audible visual signals.
+708.3 Handsets Handset cords provided shall 29 inches (735 mm) long minimum.
+802.1 Wheelchair Spaces Wheelchair spaces shall comply 802.1.
+802.1.1 Floor or Ground Surface. The floor ground surface wheelchair spaces shall comply 302. Changes level permitted.
+802.1.4 Approach Wheelchair spaces shall adjoin accessible routes.  Accessible routes shall overlap wheelchair spaces.
+802.1.5 Overlap Wheelchair spaces shall overlap circulation paths.
+802.3 Companion Seats Companion seats shall comply 802.3.
+802.4 Designated Aisle Seats. Designated aisle seats shall comply 802.4.
+802.4.2 Identification Each designated aisle seat shall identified sign marker.
+803.1 General Dressing fitting locker rooms shall comply 803.
+803.2 Turning Space Turning space complying 304 shall provided within room.
+803.3 Door Swing Doors shall swing room unless clear floor ground space complying 305.3 is provided beyond arc door swing.
+803.4 Benches A bench complying 903 shall provided within room.
+804.1 General Kitchens kitchenettes shall comply 804.
+804.2 Clearance Where pass kitchen is provided clearances shall comply 804.2.1.  Where U-shaped kitchen is provided clearances shall comply 804.2.2.
+804.3.2 Height. The kitchen surface shall 34 inches (865 mm) maximum above finish floor ground.
+804.3.3 Exposed Surfaces There shall sharp abrasive surfaces under surface counters.
+804.4 Sinks. Sinks shall comply 606.
+804.5 Storage At least 50 percent shelf space storage facilities shall comply 811.
+804.6 Appliances Where provided kitchen appliances shall comply 804.6.
+804.6.2 Operable Parts. All appliance controls shall comply 309.
+804.6.5 Oven Ovens shall comply 804.6.5.
+804.6.5.1 Side-Hinged Door Ovens Side-hinged door ovens shall surface required <a href="#sec8043">804.3</a>              positioned adjacent latch side oven door.
+804.6.5.2 Bottom-Hinged Door Ovens Bottom-hinged door ovens shall surface required <a href="#sec8043">804.3</a>              positioned adjacent side door.
+804.6.5.3 Controls Ovens shall controls front panels.
+805.2 Turning Space. Turning space complying 304 shall provided within room.
+806.2 Guest Rooms with Mobility Features Guest rooms required provide mobility features shall comply 806.2.
+806.2.1 Living and Dining Areas. Living dining areas shall accessible.
+806.2.5 Kitchens and Kitchenettes. Kitchens kitchenettes shall comply 804.
+806.2.6 Turning Space Turning space complying 304 shall provided within guest room.
+806.3 Guest Rooms with Communication Features Guest rooms required provide communication features shall comply 806.3.
+806.3.1 Alarms Where emergency warning systems provided alarms complying 702 shall provided.
+807.1 General Holding cells housing cells shall comply 807.
+807.2.1 Turning Space Turning space complying 304 shall provided within cell.
+807.2.2 Benches Where benches provided least bench shall comply 903.
+807.3 Cells with Communication Features. Cells required provide communication features shall comply 807.3.
+807.3.2 Telephones. Telephones provided within cells shall volume controls complying 704.3.
+808.1 General Courtrooms shall comply 808.
+808.2 Turning Space. Where provided areas raised depressed accessed ramps platform lifts entry ramps shall provide unobstructed turning space complying 304.
+809.3 Kitchen. Where kitchen is provided shall comply 804.
+809.5.2 Residential Dwelling Unit Smoke Detection System Residential dwelling unit smoke detection systems shall comply NFPA 72 (1999 2002 edition) (incorporated reference Referenced Standards Chapter 1).
+809.5.5 Residential Dwelling Unit Primary Entrance Communication features shall provided residential dwelling unit primary entrance complying 809.5.5.
+810.1 General Transportation facilities shall comply 810.
+810.2 Bus Boarding and Alighting Areas. Bus boarding alighting areas shall comply 810.2.
+810.2.1 Surface Bus stop boarding alighting areas shall firm stable surface.
+810.2.3 Connection Bus stop boarding alighting areas shall connected streets sidewalks pedestrian paths an accessible route complying 402.
+810.5 Rail Platforms Rail platforms shall comply 810.5.
+810.5.1 Slope. Rail platforms shall exceed slope 1:48 directions.
+810.6 Rail Station Signs Rail station signs shall comply 810.6.
+810.9 Escalators Where provided escalators shall comply sections 6.1.3.5.6 6.1.3.6.5 ASME A17.1 (incorporated reference Referenced Standards Chapter 1) shall clear width 32 inches (815 mm) minimum.
+810.10 Track Crossings. Where circulation path serving boarding platforms crosses tracks shall comply 402.
+811.1 General Storage shall comply 811.
+811.2 Clear Floor or Ground Space A clear floor ground space complying 305 shall provided.
+811.3 Height. Storage elements shall comply least reach ranges specified 308.
+811.4 Operable Parts Operable parts shall comply 309.
+902.1 General Dining surfaces surfaces shall comply 902.2 902.3.
+902.2 Clear Floor or Ground Space. A clear floor space complying 305 positioned forward approach shall provided. Knee toe clearance complying 306 shall provided.
+902.4 Dining Surfaces and Work Surfaces for Children's Use Accessible dining surfaces surfaces children's shall comply 902.4.
+902.4.2 Height The tops tables counters shall 26 inches (660 mm) minimum 30 inches (760 mm) maximum above finish floor ground.
+903.1 General Benches shall comply 903.
+903.5 Height. The top bench seat surface shall 17 inches (430 mm) minimum 19 inches (485 mm) maximum above finish floor ground.
+904.1 General Check-out aisles sales service counters shall comply applicable requirements 904.
+904.3 Check-Out Aisles Check-out aisles shall comply 904.3.
+904.3.1 Aisle. Aisles shall comply 403.
+904.3.3 Check Writing Surfaces. Where provided check writing surfaces shall comply 902.3.
+904.5 Food Service Lines Counters food service lines shall comply 904.5.
