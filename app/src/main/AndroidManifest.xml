@@ -82,7 +82,7 @@
                 android:value="sc.edu.cse.adausc.BrowseScreen" />
         </activity>
 
-        <!-- Second Style Quick Reference Pages -->
+        <!-- Quick Reference Pages -->
         <activity
             android:label="@string/QR_bathroom_label"
             android:name="edu.sc.cse.adausc.QRbathroom"

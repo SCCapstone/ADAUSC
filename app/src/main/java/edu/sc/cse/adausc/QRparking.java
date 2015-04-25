@@ -1,14 +1,8 @@
 package edu.sc.cse.adausc;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.method.LinkMovementMethod;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -41,10 +35,11 @@ public class QRparking extends Activity {
         content2.setVisibility(View.GONE);
     }
 
+    //Get the integer the user enters
     public void pullInteger() {
         final EditText myInt = (EditText) findViewById(R.id.numberInput);
         btnCalculate = (Button) findViewById(R.id.button_calculate);
-
+        //Ensure the entered value is within the bounds of what is requested
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +57,8 @@ public class QRparking extends Activity {
 
     public void editText() { //text when the int is valid
         TextView t = (TextView) findViewById(R.id.OutputText);
-        t.setText("Total spaces: " + i + "\nAccessible spaces required: " + j);
+        //t.setText("Total spaces: " + i + "\nAccessible spaces required: " + j);
+        t.setText("For a lot containing " + i + " parking spaces, at least " + j + " Accessible spaces are required.");
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         //Hide keyboard on button click
@@ -79,6 +75,7 @@ public class QRparking extends Activity {
         t.setVisibility(View.VISIBLE);
     }
 
+    //Calculator for number of parking spots needed
     public void calculateSpots(){
         if (i > 0)
         {
@@ -128,20 +125,20 @@ public class QRparking extends Activity {
             editText2();
         }
     }
-
+    //Show top content section
     public void toggle_contents(View view1){
         content1.setVisibility(content1.isShown()
                 ? View.GONE
                 : View.VISIBLE);
-
+        //calculator instructions
         content1.setText(R.string.calc_park_inst);
     }
-
+    //Show bottom content section
     public void toggle_contents2(View view2) {
         content2.setVisibility(content2.isShown()
                 ? View.GONE
                 : View.VISIBLE);
-
+        //Information
         content2.setText(R.string.parking_info_1);
     }
 }

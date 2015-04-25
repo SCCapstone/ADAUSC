@@ -7,7 +7,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parking Spot Requirement"
+        android:text="@string/QuickReference_parking_button"
         android:id="@+id/parking_button"
         android:layout_marginTop="33dp"
         android:paddingLeft="35dp"
@@ -30,7 +30,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bathroom Stalls"
+        android:text="@string/QuickReference_bathroom_button"
         android:id="@+id/stall_button"
         android:paddingLeft="35dp"
         android:paddingRight="35dp"
@@ -55,7 +55,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Door Dimensions"
+        android:text="@string/QuickReference_doors_button"
         android:id="@+id/door_button"
         android:paddingLeft="35dp"
         android:paddingRight="35dp"
@@ -79,7 +79,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hallway Dimensions"
+        android:text="@string/QuickReference_hallways_button"
         android:id="@+id/hallway_button"
         android:paddingLeft="35dp"
         android:paddingRight="35dp"
@@ -96,13 +96,14 @@
         android:layout_below="@+id/door_button"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@id/parking_button"
+        android:layout_alignLeft="@id/parking_button"
         android:clickable="true"
         android:textColor="#393939" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ramp Elevation"
+        android:text="@string/QuickReference_ramps_button"
         android:id="@+id/ramp_button"
         android:paddingLeft="35dp"
         android:paddingRight="35dp"
@@ -120,6 +121,7 @@
         android:layout_below="@+id/hallway_button"
         android:layout_centerHorizontal="true"
         android:layout_alignStart="@id/parking_button"
+        android:layout_alignLeft="@id/parking_button"
         android:clickable="true"
         android:textColor="#393939" />
 
