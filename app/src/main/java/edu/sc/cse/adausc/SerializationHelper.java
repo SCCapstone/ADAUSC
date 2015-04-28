@@ -75,6 +75,41 @@ public class SerializationHelper {
         return oLinker;
     }
 
+    public static HashMap<String, ArrayList<String>> DeserializeIndex(Context oContext){
+        HashMap<String, ArrayList<String>> oIndex = new HashMap<String, ArrayList<String>>();
+        try{
+            InputStream oStream = oContext.getAssets().open(INDEX_FILE_NAME);
+            InputStreamReader oReader = new InputStreamReader(oStream);
+            BufferedReader bufferedReader = new BufferedReader(oReader);
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                //format: XXX.X title words //space delimited
+                String[] sWords = line.split(" ");
+                String sSection = sWords[0];
+                for(int i=1; i<sWords.length; i++){
+                    if(sWords[i].indexOf('.') != -1){
+                        sWords[i] = sWords[i].substring(0,sWords[i].length()-1);
+                    }
+                    if(SessionCache.m_oWordList.contains(sWords[i].toLowerCase())==false){
+                        SessionCache.m_oWordList.add(sWords[i].toLowerCase());
+                        oIndex.put(sWords[i].toLowerCase(), new ArrayList<String>());
+                        oIndex.get(sWords[i].toLowerCase()).add(sSection);
+                    } else{
+                        if(oIndex.get(sWords[i].toLowerCase()).contains(sSection) == false) {
+                            oIndex.get(sWords[i].toLowerCase()).add(sSection);
+                        }
+                    }
+                }
+            }
+            oStream.close();
+            oReader.close();
+            bufferedReader.close();
+        } catch (Exception oEx){
+
+        }
+        return oIndex;
+    }
+
     public static StandardSection Deserialize(String sSection){
         StandardSection oSection = new StandardSection();
         try {
@@ -185,4 +220,5 @@ public class SerializationHelper {
     private static final String METADATA_FILE_NAME = "Metadata.ada"; //code title, space delimited
     private static final String FULL_DOC_FILE_NAME = "2010ADAStandards.htm";
     private static final String DIAG_SEC_LINKER_FILE_NAME = "diagramlinker.txt";
+    private static final String INDEX_FILE_NAME = "ADAIndex.txt";
 }

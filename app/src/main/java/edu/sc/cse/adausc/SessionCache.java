@@ -18,8 +18,7 @@ public class SessionCache {
         m_oSessionSearches = new ArrayList<String>();
         m_oAppContext = oContext;
         m_oSectionDiagrams = SerializationHelper.DeserializeDiagramLinker(oContext);
-        //should we go ahead and save full doc in start up?
-        //m_oFullDocHTM = SerializationHelper.LoadFullDoc();
+        m_oIndex = SerializationHelper.DeserializeIndex(oContext);
     }
 
     public static boolean IsFavorite(String sSection){
@@ -42,4 +41,6 @@ public class SessionCache {
     public static boolean m_bInitialized = false;
     public static boolean m_bFavsDirty = false;
     public static HashMap<String, String> m_oMetaData;
+    public static HashMap<String, ArrayList<String>> m_oIndex;
+    public static ArrayList<String> m_oWordList = new ArrayList<String>();
 }

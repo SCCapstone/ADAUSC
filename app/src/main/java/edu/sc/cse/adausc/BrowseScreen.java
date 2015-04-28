@@ -3,8 +3,17 @@ package edu.sc.cse.adausc;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ListView;
+import android.widget.MultiAutoCompleteTextView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,7 +28,10 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
-
+    MultiAutoCompleteTextView searchView;
+    ListView matchList;
+    ArrayList<String> m_oMatches;
+    ArrayAdapter<String> m_oMatchAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +39,116 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
 
         // get the listview
         expListView = (ExpandableListView) findViewById(R.id.browseList);
-
+        searchView = (MultiAutoCompleteTextView) findViewById(R.id.searchView);
+        matchList = (ListView) findViewById(R.id.matchView);
+        m_oMatches = new ArrayList<String>();
         // preparing list data
         prepareListData();
-
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
-
+        m_oMatches = new ArrayList<String>();
+        m_oMatchAdapter = new ArrayAdapter<String>(this, R.layout.favorite_item, m_oMatches);
+        matchList.setAdapter(m_oMatchAdapter);
+        matchList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,int position, long id)
+            {
+                String selectedFromList = matchList.getItemAtPosition(position).toString().substring(0, matchList.getItemAtPosition(position).toString().indexOf(' '));
+                SessionCache.m_oPreviousStandard = SessionCache.m_oCurrentStandard;
+                SessionCache.m_oCurrentStandard = selectedFromList;
+                Intent oTransition = new Intent(BrowseScreen.this, SectionScreen.class);
+                startActivity((oTransition));
+            }});
         // setting list adapter
         expListView.setAdapter(listAdapter);
         expListView.setOnChildClickListener(this);
 
         //enable return to home from action bar
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, SessionCache.m_oWordList);
+
+        searchView.setAdapter(adapter);
+        searchView.setTokenizer(new MultiAutoCompleteTextView.Tokenizer() {
+            public int findTokenStart(CharSequence text, int cursor) {
+                int i = cursor;
+
+                while (i > 0 && text.charAt(i - 1) != ' ') {
+                    i--;
+                }
+                while (i < cursor && text.charAt(i) == ' ') {
+                    i++;
+                }
+
+                return i;
+            }
+
+            public int findTokenEnd(CharSequence text, int cursor) {
+                int i = cursor;
+                int len = text.length();
+
+                while (i < len) {
+                    if (text.charAt(i) == ' ') {
+                        return i;
+                    } else {
+                        i++;
+                    }
+                }
+
+                return len;
+            }
+
+            public CharSequence terminateToken(CharSequence text) {
+                int i = text.length();
+
+                while (i > 0 && text.charAt(i - 1) == ' ') {
+                    i--;
+                }
+
+                if (i > 0 && text.charAt(i - 1) == ' ') {
+                    return text;
+                } else {
+                    if (text instanceof Spanned) {
+                        SpannableString sp = new SpannableString(text + "");
+                        TextUtils.copySpansFrom((Spanned) text, 0, text.length(),
+                                Object.class, sp, 0);
+                        return sp;
+                    } else {
+                        return text + "";
+                    }
+                }
+            }
+        });
+        searchView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String oInput = editable.toString().trim();
+                if(oInput.equals("")){
+                    expListView.setVisibility(View.VISIBLE);
+                    matchList.setVisibility(View.GONE);
+                } else{
+                    if(SessionCache.m_oWordList.contains(oInput.toLowerCase())){
+                        ArrayList<String> oMatches = SessionCache.m_oIndex.get(oInput.toLowerCase());
+                        ArrayList<String> oResults = new ArrayList<String>();
+                        for(int i=0; i<oMatches.size(); i++){
+                            oResults.add(oMatches.get(i) + " " + SessionCache.m_oMetaData.get(oMatches.get(i)));
+                        }
+                        expListView.setVisibility(View.GONE);
+                        matchList.setVisibility(View.VISIBLE);
+                        m_oMatchAdapter.addAll(oResults);
+                    }
+                }
+            }
+        });
     }
 
     /*
