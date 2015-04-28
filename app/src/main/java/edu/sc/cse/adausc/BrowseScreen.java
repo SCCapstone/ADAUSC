@@ -136,16 +136,17 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
                     expListView.setVisibility(View.VISIBLE);
                     matchList.setVisibility(View.GONE);
                 } else{
+                    ArrayList<String> oResults = new ArrayList<String>();
                     if(SessionCache.m_oWordList.contains(oInput.toLowerCase())){
                         ArrayList<String> oMatches = SessionCache.m_oIndex.get(oInput.toLowerCase());
-                        ArrayList<String> oResults = new ArrayList<String>();
                         for(int i=0; i<oMatches.size(); i++){
                             oResults.add(oMatches.get(i) + " " + SessionCache.m_oMetaData.get(oMatches.get(i)));
                         }
-                        expListView.setVisibility(View.GONE);
-                        matchList.setVisibility(View.VISIBLE);
-                        m_oMatchAdapter.addAll(oResults);
                     }
+                    expListView.setVisibility(View.GONE);
+                    matchList.setVisibility(View.VISIBLE);
+                    m_oMatchAdapter.clear();
+                    m_oMatchAdapter.addAll(oResults);
                 }
             }
         });
