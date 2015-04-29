@@ -7,7 +7,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parking Spot Requirement"
+        android:text="Parking Requirements"
         android:id="@+id/parking_button"
         android:layout_marginTop="33dp"
         android:paddingLeft="35dp"
