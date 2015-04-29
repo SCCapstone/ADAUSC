@@ -56,7 +56,12 @@ public class QRparking extends Activity {
                     editText2();
                 }
                 else {
-                    i = Integer.parseInt(myInt.getText().toString());
+                    try {
+                        i = Integer.parseInt(myInt.getText().toString());
+                    } catch (NumberFormatException e) {
+                        i = -1;
+                        ((EditText) findViewById(R.id.numberInput)).setText("");
+                    }
                     calculateSpots();
                 }
             }
@@ -76,9 +81,15 @@ public class QRparking extends Activity {
         t.setVisibility(View.VISIBLE);
     }
 
-    public void editText2() { //text when the value entered isn't a positive integer
+    public void editText2() { //text when an invalid integer is recieved (i.e. too big)
         TextView t = (TextView) findViewById(R.id.OutputText);
-        t.setText("Error! Please enter a positive, non-zero number only.");
+        t.setText("Error: Invalid number.");
+        t.setVisibility(View.VISIBLE);
+    }
+
+    public void editText3() { //text when the value entered isn't a positive integer
+        TextView t = (TextView) findViewById(R.id.OutputText);
+        t.setText("Error: Please enter a positive, non-zero number only.");
         t.setVisibility(View.VISIBLE);
     }
 
@@ -126,9 +137,13 @@ public class QRparking extends Activity {
             }
             editText();
         }
-        else
+        else if (i == -1)
         {
             editText2();
+        }
+        else
+        {
+            editText3();
         }
     }
 
