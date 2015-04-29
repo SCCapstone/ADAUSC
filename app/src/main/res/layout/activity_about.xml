@@ -26,7 +26,7 @@
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
         android:textColor="#000000"
-        android:text="        - Copyright (c) 2014 David Brookins, Mateusz Czarnocki, Sean Doherty, John Mauney"
+        android:text="        - Copyright (c) 2015 David Brookins, Mateusz Czarnocki, Sean Doherty, John Mauney"
         android:textSize="13sp" />
 
     <ScrollView
