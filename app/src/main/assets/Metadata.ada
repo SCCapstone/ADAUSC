@@ -352,3 +352,45 @@
 904.3.1 Aisle.
 904.3.3 Check Writing Surfaces.
 904.5 Food Service Lines
+1002.1 General.
+1002.2 Accessible Routes.
+1002.3 Load and Unload Areas.
+1002.4 Wheelchair Spaces in Amusement Rides
+1002.4.1 Floor or Ground Surface.
+1002.4.4 Clearances
+1002.4.5 Ride Entry
+1002.4.6 Approach
+1003.1 General
+1003.2.1 Boat Slips
+1003.2.2 Boarding Piers at Boat Launch Ramps.
+1003.3 Clearances
+1005.2 Railings
+1005.5 Turning Space
+1006.1 General
+1006.3 Golf Car Passages
+1006.3.1 Clear Width
+1007.1 General
+1007.3 Miniature Golf Holes
+1008.1 General
+1008.2.4 Clear Width.
+1008.2.4.1 Ground Level
+1008.2.5.1 Ground Level.
+1008.2.5.2 Elevated
+1008.2.6 Ground Surfaces
+1008.3.1.4 Transfer Supports.
+1008.3.2.1 Size
+1008.3.2.2 Height.
+1008.3.2.3 Transfer Supports.
+1008.4 Play Components.
+1009.2 Pool Lifts
+1009.2.1 Pool Lift Location
+1009.2.5 Seat Width.
+1009.3 Sloped Entries.
+1009.3.1 Sloped Entries
+1009.4 Transfer Walls.
+1009.4.4 Surface.
+1009.5 Transfer Systems.
+1009.5.3 Height.
+1009.5.5 Surface.
+1009.6 Pool Stairs
+1009.6.1 Pool Stairs

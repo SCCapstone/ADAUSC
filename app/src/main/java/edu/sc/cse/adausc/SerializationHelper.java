@@ -3,6 +3,7 @@ package edu.sc.cse.adausc;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -141,7 +142,7 @@ public class SerializationHelper {
     public static ArrayList<ArrayList<String>> DeserializeMetadata(Context oContext) {
         ArrayList<ArrayList<String>> oParentChildList = new ArrayList<ArrayList<String>>();
         HashMap<String, String> oFullList = new HashMap<String, String>();
-        for(int i = 0; i < 9; i++){
+        for(int i = 0; i < 10; i++){
             oParentChildList.add(new ArrayList<String>());
         }
         try {
@@ -150,9 +151,20 @@ public class SerializationHelper {
             BufferedReader bufferedReader = new BufferedReader(oReader);
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                int oSection = Integer.parseInt(line.substring(0, 1));
-                oParentChildList.get(oSection - 1).add(line);
-                oFullList.put(line.substring(0, line.indexOf(' ')), line.substring(line.indexOf(' ')+1, line.length()));
+                int oSection = -1;
+                if (line.indexOf('.') == 3) {
+                    oSection = Integer.parseInt(line.substring(0, 1));
+                    Log.d("oSection:", Integer.toString(oSection));
+                }
+                else if (line.indexOf('.') == 4) {
+                    oSection = Integer.parseInt(line.substring(0, 2));
+                    Log.d("oSection:", Integer.toString(oSection));
+                }
+
+                if (oSection != -1) {
+                    oParentChildList.get(oSection - 1).add(line);
+                    oFullList.put(line.substring(0, line.indexOf(' ')), line.substring(line.indexOf(' ')+1, line.length()));
+                }
             }
             oReader.close();
             bufferedReader.close();

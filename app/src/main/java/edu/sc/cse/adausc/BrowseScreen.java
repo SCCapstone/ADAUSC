@@ -169,6 +169,7 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
         listDataHeader.add("7 Communication");
         listDataHeader.add("8 Special Elements");
         listDataHeader.add("9 Built-In Elements");
+        listDataHeader.add("10 Recreation Facilities");
 
         // Adding child data
         List<String> section1 = new ArrayList<String>();
@@ -207,6 +208,10 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
         for(int i = 0; i < SessionCache.m_oParentChildList.get(8).size(); i++){
             section9.add(SessionCache.m_oParentChildList.get(8).get(i));
         }
+        List<String> section10 = new ArrayList<String>();
+        for(int i = 0; i < SessionCache.m_oParentChildList.get(9).size(); i++){
+            section10.add(SessionCache.m_oParentChildList.get(9).get(i));
+        }
         listDataChild.put(listDataHeader.get(0), section1);
         listDataChild.put(listDataHeader.get(1), section2);
         listDataChild.put(listDataHeader.get(2), section3);
@@ -216,6 +221,7 @@ public class BrowseScreen extends Activity implements ExpandableListView.OnChild
         listDataChild.put(listDataHeader.get(6), section7);
         listDataChild.put(listDataHeader.get(7), section8);
         listDataChild.put(listDataHeader.get(8), section9);
+        listDataChild.put(listDataHeader.get(9), section10);
 
     }
 
