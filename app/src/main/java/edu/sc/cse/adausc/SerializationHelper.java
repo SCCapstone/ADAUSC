@@ -3,7 +3,6 @@ package edu.sc.cse.adausc;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -154,11 +153,9 @@ public class SerializationHelper {
                 int oSection = -1;
                 if (line.indexOf('.') == 3) {
                     oSection = Integer.parseInt(line.substring(0, 1));
-                    Log.d("oSection:", Integer.toString(oSection));
                 }
                 else if (line.indexOf('.') == 4) {
                     oSection = Integer.parseInt(line.substring(0, 2));
-                    Log.d("oSection:", Integer.toString(oSection));
                 }
 
                 if (oSection != -1) {

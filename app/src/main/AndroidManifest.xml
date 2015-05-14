@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.sc.cse.adausc" >
+    package="edu.sc.cse.adausc"
+    android:versionCode="1"
+    android:versionName="ADA Access 1.0" >
 
     <application
         android:allowBackup="true"
